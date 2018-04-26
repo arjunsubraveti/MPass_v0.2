@@ -1,0 +1,5 @@
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\bin\Debug\MulakatDataRepository.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\bin\Debug\MulakatDataRepository.pdb
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatEntities.csproj.CoreCompileInputs.cache
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.pdb

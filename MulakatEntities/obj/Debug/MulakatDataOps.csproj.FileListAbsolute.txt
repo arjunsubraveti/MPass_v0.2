@@ -1,0 +1,12 @@
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\GpassDBConnect.cs
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\MulakatEntities.dll.config
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\MulakatEntities.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\MulakatEntities.pdb
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\MulakatDataRepository.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\MulakatDataRepository.pdb
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatDataOps.csprojResolveAssemblyReference.cache
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatDataOps.csproj.CoreCompileInputs.cache
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatDataOps.csproj.CopyComplete
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatEntities.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatEntities.pdb
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\GP.mdb
