@@ -134,6 +134,7 @@
             this.btnClear.TabIndex = 172;
             this.btnClear.Text = "Clear all";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -155,6 +156,7 @@
             this.btnPrint.TabIndex = 170;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // txtMoney
             // 
@@ -571,6 +573,7 @@
             this.txtPrisonerName1.Name = "txtPrisonerName1";
             this.txtPrisonerName1.Size = new System.Drawing.Size(131, 24);
             this.txtPrisonerName1.TabIndex = 106;
+            this.txtPrisonerName1.TextChanged += new System.EventHandler(this.txtPrisonerName1_TextChanged);
             // 
             // btnPhotoCapture
             // 
@@ -665,24 +668,30 @@
             this.txtTime.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime.Location = new System.Drawing.Point(668, 101);
             this.txtTime.Name = "txtTime";
+            this.txtTime.ReadOnly = true;
             this.txtTime.Size = new System.Drawing.Size(85, 24);
             this.txtTime.TabIndex = 96;
+            this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtDate
             // 
             this.txtDate.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Location = new System.Drawing.Point(515, 101);
             this.txtDate.Name = "txtDate";
+            this.txtDate.ReadOnly = true;
             this.txtDate.Size = new System.Drawing.Size(85, 24);
             this.txtDate.TabIndex = 95;
+            this.txtDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtSNo
             // 
             this.txtSNo.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSNo.Location = new System.Drawing.Point(80, 97);
             this.txtSNo.Name = "txtSNo";
+            this.txtSNo.ReadOnly = true;
             this.txtSNo.Size = new System.Drawing.Size(85, 24);
             this.txtSNo.TabIndex = 94;
+            this.txtSNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblTime
             // 

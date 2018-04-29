@@ -16,6 +16,10 @@ namespace MulakatEntities
                              where nic.OperationalStatus == OperationalStatus.Up
                              select nic.GetPhysicalAddress().ToString()
                         ).FirstOrDefault();
+
+            IsInsertFinished = false;
+            IsIncorrectData = false;
+
         }
 
         public long SerialNumber { get; set; }
@@ -105,7 +109,8 @@ namespace MulakatEntities
 
 
         //Indicators for contextual purposes
-        public bool InsertFinished { get; set; }
+        public bool IsInsertFinished { get; set; }
+        public bool IsIncorrectData { get; set; }
         public int TotalEntries { get; set; }
 
 

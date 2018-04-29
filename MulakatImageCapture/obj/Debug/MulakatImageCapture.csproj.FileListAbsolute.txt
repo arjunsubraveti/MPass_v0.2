@@ -1,0 +1,6 @@
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.dll
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csprojResolveAssemblyReference.cache
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.CoreCompileInputs.cache
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.dll
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.pdb

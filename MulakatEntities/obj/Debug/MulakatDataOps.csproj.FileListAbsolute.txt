@@ -10,3 +10,15 @@ C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\Mulak
 C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatEntities.dll
 C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\obj\Debug\MulakatEntities.pdb
 C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatEntities\bin\Debug\GP.mdb
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\GpassDBConnect.cs
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\MulakatEntities.dll.config
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\MulakatEntities.dll
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\MulakatEntities.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\MulakatDataRepository.dll
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\MulakatDataRepository.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\obj\Debug\MulakatDataOps.csprojResolveAssemblyReference.cache
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\obj\Debug\MulakatDataOps.csproj.CoreCompileInputs.cache
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\obj\Debug\MulakatDataOps.csproj.CopyComplete
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\obj\Debug\MulakatEntities.dll
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\obj\Debug\MulakatEntities.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatEntities\bin\Debug\GP.mdb

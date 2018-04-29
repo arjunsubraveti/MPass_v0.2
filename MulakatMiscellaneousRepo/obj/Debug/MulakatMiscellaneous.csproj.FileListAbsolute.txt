@@ -1,0 +1,6 @@
+E:\VB-Scripting\MPass_v0.2\MulakatMiscellaneousRepo\bin\Debug\MulakatMiscellaneousRepo.dll
+E:\VB-Scripting\MPass_v0.2\MulakatMiscellaneousRepo\bin\Debug\MulakatMiscellaneousRepo.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatMiscellaneousRepo\obj\Debug\MulakatMiscellaneous.csprojResolveAssemblyReference.cache
+E:\VB-Scripting\MPass_v0.2\MulakatMiscellaneousRepo\obj\Debug\MulakatMiscellaneous.csproj.CoreCompileInputs.cache
+E:\VB-Scripting\MPass_v0.2\MulakatMiscellaneousRepo\obj\Debug\MulakatMiscellaneousRepo.dll
+E:\VB-Scripting\MPass_v0.2\MulakatMiscellaneousRepo\obj\Debug\MulakatMiscellaneousRepo.pdb

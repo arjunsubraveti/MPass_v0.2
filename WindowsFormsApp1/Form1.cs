@@ -46,7 +46,8 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object o, EventArgs e)
         {
-            txtSNo.Text = objIGpassDB.RetrieveSerialNumber().ToString();
+
+            LoadFormElements();
 
             objGpassFormHandler.PopulateComboBox("Relation.txt", drdRelation1);
             objGpassFormHandler.PopulateComboBox("Relation.txt", drdRelation2);
@@ -85,6 +86,12 @@ namespace WindowsFormsApp1
             objGpassFormHandler.PopulateComboBox("UTCT.txt", drdUTCT3);
             objGpassFormHandler.PopulateComboBox("UTCT.txt", drdUTCT4);
 
+            
+        }
+
+        private void LoadFormElements()
+        {
+            txtSNo.Text = objIGpassDB.RetrieveSerialNumber().ToString();
             txtDate.Text = DateTime.Now.ToShortDateString();
             tm.Tick += new EventHandler(tm_Tick);
             tm.Interval = 1000;
@@ -102,17 +109,46 @@ namespace WindowsFormsApp1
             objGPass = objGPass ?? CreateNewGpassEntity();
 
             CaptureFormText();
-            if (SendToDB() > 0)
+
+            objGpassFormHandler.ValidateAllComboBoxes(this);
+
+            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName1);
+            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName2);
+            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName3);
+            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName4);
+
+            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName1);
+            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName2);
+            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName3);
+            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName4);
+
+            objGpassFormHandler.TextBoxValidationForNames(txtFatherName1);
+            objGpassFormHandler.TextBoxValidationForNames(txtFatherName2);
+            objGpassFormHandler.TextBoxValidationForNames(txtFatherName3);
+            objGpassFormHandler.TextBoxValidationForNames(txtFatherName4);
+           
+            objGpassFormHandler.TextBoxValidationForMobile(txtMobile1);
+            objGpassFormHandler.TextBoxValidationForMobile(txtMobile2);
+            objGpassFormHandler.TextBoxValidationForMobile(txtMobile3);
+            objGpassFormHandler.TextBoxValidationForMobile(txtMobile4);
+
+
+            objGPass.IsIncorrectData = objGpassFormHandler.IsValidData(this);
+
+            if ( !(objGPass.IsIncorrectData) && SendToDB() > 0)
             {
                 MessageBox.Show("Insert Successful!");
-                
+                objGPass.IsInsertFinished = true;
+                objGpassFormHandler.DisableBoxes(this);
+                btnSave.Enabled = false;
             }
             else
             {
                 MessageBox.Show("Insert Failed!");
             }
-            
-            
+
+
+
         }
 
         private void CaptureFormText()
@@ -191,10 +227,6 @@ namespace WindowsFormsApp1
 
             objGPass.Money = txtMoney.Text;
 
-
-
-
-
         }
 
         private int SendToDB()
@@ -203,9 +235,28 @@ namespace WindowsFormsApp1
             return (objIGpassDB.InsertGPassDB(objGPass));
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            //Call Print methods
+            //Disable Print
+            //Show messagebox that data has been printed
+            btnPrint.Enabled = false;
+        }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            objGpassFormHandler.EmptyTextBoxes(this);
+            LoadFormElements();
+            objGPass = new GpassEntity();
+            objGpassFormHandler.EnableBoxes(this);
+            btnSave.Enabled = true;
+            btnPrint.Enabled = true;
+        }
 
-      
+        private void txtPrisonerName1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
