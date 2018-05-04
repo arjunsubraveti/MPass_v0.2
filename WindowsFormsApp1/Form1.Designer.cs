@@ -573,7 +573,6 @@
             this.txtPrisonerName1.Name = "txtPrisonerName1";
             this.txtPrisonerName1.Size = new System.Drawing.Size(131, 24);
             this.txtPrisonerName1.TabIndex = 106;
-            this.txtPrisonerName1.TextChanged += new System.EventHandler(this.txtPrisonerName1_TextChanged);
             // 
             // btnPhotoCapture
             // 
@@ -584,6 +583,7 @@
             this.btnPhotoCapture.TabIndex = 105;
             this.btnPhotoCapture.Text = "Photo capture";
             this.btnPhotoCapture.UseVisualStyleBackColor = true;
+            this.btnPhotoCapture.Click += new System.EventHandler(this.btnPhotoCapture_Click);
             // 
             // Label13
             // 

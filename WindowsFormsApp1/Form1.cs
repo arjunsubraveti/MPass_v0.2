@@ -1,5 +1,6 @@
 ﻿using MulakatDataOps;
 using MulakatEntities;
+using MulakatImageCapture;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,6 +56,7 @@ namespace WindowsFormsApp1
             objGpassFormHandler.PopulateComboBox("Relation.txt", drdRelation4);
 
             objGpassFormHandler.PopulateComboBox("Article.txt", drdArticles);
+            objGpassFormHandler.PopulateComboBox("Purpose.txt", drdPurpose);
 
             objGpassFormHandler.PopulateComboBox("Case.txt", drdCase1);
             objGpassFormHandler.PopulateComboBox("Case.txt", drdCase2);
@@ -110,45 +112,55 @@ namespace WindowsFormsApp1
 
             CaptureFormText();
 
-            objGpassFormHandler.ValidateAllComboBoxes(this);
-
-            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName1);
-            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName2);
-            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName3);
-            objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName4);
-
-            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName1);
-            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName2);
-            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName3);
-            objGpassFormHandler.TextBoxValidationForNames(txtVisitorName4);
-
-            objGpassFormHandler.TextBoxValidationForNames(txtFatherName1);
-            objGpassFormHandler.TextBoxValidationForNames(txtFatherName2);
-            objGpassFormHandler.TextBoxValidationForNames(txtFatherName3);
-            objGpassFormHandler.TextBoxValidationForNames(txtFatherName4);
-           
-            objGpassFormHandler.TextBoxValidationForMobile(txtMobile1);
-            objGpassFormHandler.TextBoxValidationForMobile(txtMobile2);
-            objGpassFormHandler.TextBoxValidationForMobile(txtMobile3);
-            objGpassFormHandler.TextBoxValidationForMobile(txtMobile4);
-
-
-            objGPass.IsIncorrectData = objGpassFormHandler.IsValidData(this);
-
-            if ( !(objGPass.IsIncorrectData) && SendToDB() > 0)
+            
+            if (objGpassFormHandler.IsEmptyTextBox(txtPrisonerName1) ||
+            objGpassFormHandler.IsEmptyTextBox(txtVisitorName1) ||
+            objGpassFormHandler.IsEmptyComboBox(drdPurpose))
             {
-                MessageBox.Show("Insert Successful!");
-                objGPass.IsInsertFinished = true;
-                objGpassFormHandler.DisableBoxes(this);
-                btnSave.Enabled = false;
+                MessageBox.Show("Please fill the mandatory fields");
             }
             else
+
             {
-                MessageBox.Show("Insert Failed!");
+                objGpassFormHandler.ValidateAllComboBoxes(this);
+
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName1);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName2);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName3);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName4);
+
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName1);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName2);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName3);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName4);
+
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName1);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName2);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName3);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName4);
+
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile1);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile2);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile3);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile4);
+
+
+                objGPass.IsIncorrectData = objGpassFormHandler.IsValidData(this);
+
+                if (!(objGPass.IsIncorrectData) && SendToDB() > 0)
+                {
+                    MessageBox.Show("Insert Successful!");
+                    objGPass.IsInsertFinished = true;
+                    objGpassFormHandler.DisableBoxes(this);
+                    btnSave.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Insert Failed!");
+                }
+
             }
-
-
-
+ 
         }
 
         private void CaptureFormText()
@@ -253,9 +265,10 @@ namespace WindowsFormsApp1
             btnPrint.Enabled = true;
         }
 
-        private void txtPrisonerName1_TextChanged(object sender, EventArgs e)
+        private void btnPhotoCapture_Click(object sender, EventArgs e)
         {
-
+            PassImageForm passImage = new PassImageForm();
+            passImage.Show();
         }
     }
 

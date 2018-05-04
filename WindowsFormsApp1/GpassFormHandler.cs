@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public class GpassFormHandler   
     {
-        private string regExForName = "[a-zA-Z][a-zA-Z ]+";
+        private string regExForName = @"^[a-zA-Z][a-zA-Z]+";
         private string regExForMobile = @"^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1}){0,1}98(\s){0,1}(\-){0,1}(\s){0,1}[1-9]{1}[0-9]{7}$";
         private ErrorProvider errorProvider;
 
@@ -24,29 +24,39 @@ namespace WindowsFormsApp1
 
         public void PopulateComboBox(string filename, ComboBox comboBox)
         {
-            filename = AppDomain.CurrentDomain.BaseDirectory + @"\" + filename;
-            string[] lineOfContents = File.ReadAllLines(filename);
-            foreach (var line in lineOfContents)
+            try
             {
-                comboBox.Items.Add(line);
+                filename = AppDomain.CurrentDomain.BaseDirectory + @"\" + filename;
+                string[] lineOfContents = File.ReadAllLines(filename);
+                foreach (var line in lineOfContents)
+                {
+                    comboBox.Items.Add(line);
+                }
             }
+
+            catch(Exception e)
+            {
+                MessageBox.Show("Error reading file. File not found - " + filename);
+            }
+
+
         }
 
 
-       public void CheckForEmptyTextBox(Control parents)
+       public void CheckForAllEmptyTextBox(Control parents)
         {
             foreach (Control c in parents.Controls)
             {
                 if ((c.GetType() == typeof(TextBox)) && (c.Text == string.Empty) )
                 {
-                    ((TextBox)(c)).BackColor = Color.Crimson;
+                    ((TextBox)(c)).BackColor = Color.Pink;
 
                 }
                 else
                 {
                     if ((c.GetType() == typeof(ComboBox)) && (c.Text == string.Empty))
                     {
-                        ((ComboBox)(c)).BackColor = Color.Crimson;
+                        ((ComboBox)(c)).BackColor = Color.Pink;
 
                     }
 
@@ -55,27 +65,83 @@ namespace WindowsFormsApp1
 
         }
 
+        public bool IsEmptyTextBox(TextBox textBox)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                textBox.BackColor = Color.Pink;
+                return true;
+            }
+            else
+            {
+                textBox.BackColor = Color.White;
+                return false;
+            }
+        }
+
+        public bool IsEmptyComboBox(ComboBox comboBox)
+        {
+            if (string.IsNullOrEmpty(comboBox.Text))
+            {
+                comboBox.BackColor = Color.Pink;
+                return true;
+            }
+            else
+            {
+                comboBox.BackColor = Color.White;
+                return false;
+            }
+        }
+
+        public void ValidateComboBox(ComboBox comboBox)
+        {
+            if (!(string.IsNullOrEmpty(comboBox.Text)))
+            {
+                comboBox.BackColor = Color.Pink;
+
+                foreach (var item in (comboBox.Items))
+                {
+                    if (item.ToString() == comboBox.Text)
+                    {
+                        comboBox.BackColor = Color.White;
+                    }
+                }
+            }
+            else
+            {
+                comboBox.BackColor = Color.White;
+            }
+        }
+
 
         public void ValidateAllComboBoxes(Control parents)
-        {
-            
+        {  
             foreach (Control c in parents.Controls)
-            {
-               
-
-                if ((c.GetType() == typeof(ComboBox)) && (!string.IsNullOrWhiteSpace(c.Text)))
+            {              
+                if ((c.GetType() == typeof(ComboBox)))
                 {
-                    ((ComboBox)(c)).BackColor = Color.Crimson;
-
-                    foreach (var item in ((ComboBox)(c)).Items)
+                    if(!string.IsNullOrWhiteSpace(c.Text))
                     {
-                        if(item.ToString() == c.Text)
-                        {
-                           ((ComboBox)(c)).BackColor = Color.White;
-                        }
-                    }           
-                }
+                        ((ComboBox)(c)).BackColor = Color.Pink;
 
+                        foreach (var item in ((ComboBox)(c)).Items)
+                        {
+                            if (item.ToString() == c.Text)
+                            {
+                                ((ComboBox)(c)).BackColor = Color.White;
+                            }
+                        }
+
+                    }
+
+                    //If users make the combox empty after entering value
+                    else
+                    {
+                        ((ComboBox)(c)).BackColor = Color.White;
+                    }
+
+                }
+               
                 }
             }
 
@@ -85,9 +151,11 @@ namespace WindowsFormsApp1
             
             if ( !string.IsNullOrEmpty(textBox.Text))
             {
+                 var test = Regex.IsMatch(textBox.Text, regExForName);
+
                 if (!Regex.IsMatch(textBox.Text, regExForName))
                     {
-                    textBox.BackColor = Color.Crimson;
+                    textBox.BackColor = Color.Pink;
                 }
                 //errorProvider.SetError(textBox, "Alphabets and spaces are only allowed");
                
@@ -107,7 +175,7 @@ namespace WindowsFormsApp1
             if ( !string.IsNullOrEmpty(textBox.Text) && !Regex.IsMatch(textBox.Text, regExForMobile))
             {
                 //errorProvider.SetError(textBox, "Alphabets and spaces are only allowed");
-                textBox.BackColor = Color.Crimson;
+                textBox.BackColor = Color.Pink;
 
             }
             else
@@ -125,7 +193,7 @@ namespace WindowsFormsApp1
             {
                 if (c.GetType() == typeof(TextBox) || c.GetType() == typeof(ComboBox))
                 {
-                    if (c.BackColor == Color.Crimson)
+                    if (c.BackColor == Color.Pink)
                     {
                         return true;
                     }
@@ -194,6 +262,8 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        
 
     }
 }

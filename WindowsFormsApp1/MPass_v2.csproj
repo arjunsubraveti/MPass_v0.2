@@ -89,6 +89,10 @@
       <Project>{881D02FA-B6D5-4964-86EE-64848124CA1E}</Project>
       <Name>MulakatDataOps</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MulakatImageCapture\MulakatImageCapture.csproj">
+      <Project>{DBB6ECEF-7790-433B-9D1B-50C3DDB79AF5}</Project>
+      <Name>MulakatImageCapture</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
