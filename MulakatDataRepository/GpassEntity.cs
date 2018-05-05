@@ -106,7 +106,7 @@ namespace MulakatEntities
         public string PS3 { get; set; }
         public string Aadhaar3 { get; set; }
         public string Mobile3 { get; set; }
-
+        public byte[] PassImageData { get; set; }
 
         //Indicators for contextual purposes
         public bool IsInsertFinished { get; set; }

@@ -1,9 +1,3 @@
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.dll
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.pdb
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csprojResolveAssemblyReference.cache
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.CoreCompileInputs.cache
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.dll
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.pdb
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\x64\concrt140.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\x64\cvextern.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\x64\msvcp140.dll
@@ -15,6 +9,8 @@ E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\x86\msvcp140.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\x86\opencv_ffmpeg341.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\x86\vcruntime140.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.dll.config
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.dll
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\MulakatImageCapture.pdb
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\DirectShowLib.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\Emgu.CV.UI.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\Emgu.CV.World.dll
@@ -38,4 +34,8 @@ E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\zh-cn\ZedGraph.resource
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\zh-tw\ZedGraph.resources.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.PassImageForm.resources
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.GenerateResource.cache
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.CoreCompileInputs.cache
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.CopyComplete
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.dll
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csprojResolveAssemblyReference.cache

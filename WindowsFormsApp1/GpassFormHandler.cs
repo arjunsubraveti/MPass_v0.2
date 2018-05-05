@@ -223,7 +223,7 @@ namespace WindowsFormsApp1
             {
                 if (c.GetType() == typeof(TextBox))
                 {
-                    ((TextBox)(c)).ReadOnly = true;
+                    ((TextBox)(c)).Enabled = false;
                     
                 }
                 else
@@ -238,6 +238,17 @@ namespace WindowsFormsApp1
             }
         }
 
+        public bool CheckIfImageCaptured(PictureBox pb)
+        {
+            if(pb.Image == pb.InitialImage)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         public void EnableBoxes(Control parent)
         {
@@ -247,7 +258,7 @@ namespace WindowsFormsApp1
                 {
                     if( c.Name.ToString() != "txtDate" || c.Name.ToString() !=  "txtTime" || c.Name.ToString() != "txtSNo")
                     {
-                        ((TextBox)(c)).ReadOnly = false;
+                        ((TextBox)(c)).Enabled = true;
                     }   
                     
                 }
@@ -263,7 +274,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        
+       
+
+
 
     }
 }

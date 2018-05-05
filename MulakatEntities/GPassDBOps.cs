@@ -48,7 +48,7 @@ namespace MulakatDataOps
                     "P_Name, P_FName, P_Type, DOA, CaseDet, PS, Dist, " +
                     "P_Name1, P_FName1, P_Type1, DOA1, CaseDet1, PS1, Dist1, " +
                     "P_Name2, P_FName2, P_Type2, DOA2, CaseDet2, PS2, Dist2, " +
-                    "P_Name3, P_FName3, P_Type3, DOA3, CaseDet3, PS3, Dist3 ) VALUES (" +
+                    "P_Name3, P_FName3, P_Type3, DOA3, CaseDet3, PS3, Dist3, Vis_img ) VALUES (" +
                     "'"  +      gpassEntity.SystemUId           + "'," +
                     " '" +      gpassEntity.OnlyDate            + "', " +
                     "'"  +      gpassEntity.OnlyTime            + "', " +
@@ -106,14 +106,15 @@ namespace MulakatDataOps
                     "'"  +      gpassEntity.District1         + "', " +
                     "'"  +      gpassEntity.District2         + "', " +
                     "'"  +      gpassEntity.District3         + "', " +
-                    "'"  +      gpassEntity.District4         + "') " ;
+                    "'"  +      gpassEntity.District4         + "', " +
+                    "'"  +      gpassEntity.PassImageData     + "') " ;
                 cmd.Connection = conn;
                 return cmd.ExecuteNonQuery();
 
             }
             catch (ManagementException e)
             {
-                return 9999;
+                return -1;
             }
 
         }

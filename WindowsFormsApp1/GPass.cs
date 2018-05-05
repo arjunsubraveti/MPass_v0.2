@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,11 +15,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form 
+    public partial class GPass : Form 
     {
         private GpassEntity objGPass;
         private IGpassDB objIGpassDB;
         private GpassFormHandler objGpassFormHandler;
+        private PassImageForm passImage;
         private Timer tm = new Timer();
 
         private GpassFormHandler CreateNewGpassFormHandler()
@@ -36,7 +38,7 @@ namespace WindowsFormsApp1
             return new GPassDBOps();
         }
 
-        public Form1()
+        public GPass()
         {
             InitializeComponent();
             
@@ -119,11 +121,15 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Please fill the mandatory fields");
             }
+            else if(!objGpassFormHandler.CheckIfImageCaptured(displayImageBox))
+            {
+                MessageBox.Show("Photo hasn't been captured");
+            }
             else
 
             {
                 objGpassFormHandler.ValidateAllComboBoxes(this);
-
+         
                 objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName1);
                 objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName2);
                 objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName3);
@@ -144,6 +150,7 @@ namespace WindowsFormsApp1
                 objGpassFormHandler.TextBoxValidationForMobile(txtMobile3);
                 objGpassFormHandler.TextBoxValidationForMobile(txtMobile4);
 
+              
 
                 objGPass.IsIncorrectData = objGpassFormHandler.IsValidData(this);
 
@@ -153,6 +160,7 @@ namespace WindowsFormsApp1
                     objGPass.IsInsertFinished = true;
                     objGpassFormHandler.DisableBoxes(this);
                     btnSave.Enabled = false;
+                    btnPhotoCapture.Enabled = false;
                 }
                 else
                 {
@@ -239,12 +247,20 @@ namespace WindowsFormsApp1
 
             objGPass.Money = txtMoney.Text;
 
+            objGPass.PassImageData = ImageToByte(displayImageBox.Image);
+
         }
 
         private int SendToDB()
         {
             
             return (objIGpassDB.InsertGPassDB(objGPass));
+        }
+
+        public byte[] ImageToByte(Image img)
+        {
+            ImageConverter converter = new ImageConverter();
+            return (byte[])converter.ConvertTo(img, typeof(byte[]));
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -263,12 +279,36 @@ namespace WindowsFormsApp1
             objGpassFormHandler.EnableBoxes(this);
             btnSave.Enabled = true;
             btnPrint.Enabled = true;
+            btnPhotoCapture.Enabled = true;
+            displayImageBox.Image = displayImageBox.InitialImage;
         }
 
         private void btnPhotoCapture_Click(object sender, EventArgs e)
         {
-            PassImageForm passImage = new PassImageForm();
+            passImage = new PassImageForm();
             passImage.Show();
+            passImage.FormClosed += new FormClosedEventHandler(passImage_Closed);
+            
+        }
+
+        private void passImage_Closed(object sender, FormClosedEventArgs e)
+        {
+
+            //displayImageBox.Image = Image.FromFile(passImage.tempFilePath);
+            Image img = new Bitmap(passImage.tempFilePath);
+            displayImageBox.Image = img.GetThumbnailImage(130, 130, new Image.GetThumbnailImageAbort(CallbackFun), new IntPtr());
+            
+
+        }
+
+        public bool CallbackFun()
+        {
+            return true;
+        }
+
+        private void displayImageBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

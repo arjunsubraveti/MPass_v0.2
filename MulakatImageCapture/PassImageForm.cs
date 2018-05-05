@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace MulakatImageCapture
         #region Variables
         #region Camera Capture Variables
         private VideoCapture _capture = null; //Camera
+        public string tempFilePath;
         private bool _captureInProgress = false; //Variable to track camera state
         int CameraDevice = 0; //Variable to track camera device selected
         Video_Device[] WebCams; //List containing all the camera available
@@ -53,6 +55,8 @@ namespace MulakatImageCapture
                 //Image<Bgr, Byte> image = _capture.QueryFrame().ToImage<Bgr, Byte>();
                  Mat frame = new Mat();
                 _capture.Retrieve(frame, 0);
+                tempFilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + "tmpImg.jpg";
+                frame.Save(tempFilePath);
                 DisplayImage(frame.Bitmap);
             }
             catch(Exception ex)
@@ -80,6 +84,8 @@ namespace MulakatImageCapture
             else
             {
                 passImageBox.Image = Image;
+                
+
             }
         }
 
@@ -104,10 +110,6 @@ namespace MulakatImageCapture
             }
         }
 
-        private void PassImageForm_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCapture_Click(object sender, EventArgs e)
         {

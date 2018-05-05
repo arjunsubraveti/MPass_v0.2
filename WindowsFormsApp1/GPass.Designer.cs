@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class GPass
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GPass));
             this.btnReport = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -113,6 +114,8 @@
             this.drdDOA3 = new System.Windows.Forms.ComboBox();
             this.drdDOA2 = new System.Windows.Forms.ComboBox();
             this.drdDOA1 = new System.Windows.Forms.ComboBox();
+            this.displayImageBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.displayImageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReport
@@ -895,11 +898,22 @@
             this.drdDOA1.Size = new System.Drawing.Size(67, 24);
             this.drdDOA1.TabIndex = 186;
             // 
+            // displayImageBox
+            // 
+            this.displayImageBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("displayImageBox.InitialImage")));
+            this.displayImageBox.Location = new System.Drawing.Point(777, 131);
+            this.displayImageBox.Name = "displayImageBox";
+            this.displayImageBox.Size = new System.Drawing.Size(130, 130);
+            this.displayImageBox.TabIndex = 190;
+            this.displayImageBox.TabStop = false;
+            this.displayImageBox.Click += new System.EventHandler(this.displayImageBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(987, 514);
+            this.Controls.Add(this.displayImageBox);
             this.Controls.Add(this.drdDOA4);
             this.Controls.Add(this.drdDOA3);
             this.Controls.Add(this.drdDOA2);
@@ -988,6 +1002,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.displayImageBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1080,6 +1095,7 @@
         internal System.Windows.Forms.ComboBox drdDOA3;
         internal System.Windows.Forms.ComboBox drdDOA2;
         internal System.Windows.Forms.ComboBox drdDOA1;
+        private System.Windows.Forms.PictureBox displayImageBox;
     }
 }
 

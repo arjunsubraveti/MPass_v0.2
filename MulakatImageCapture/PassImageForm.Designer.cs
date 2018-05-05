@@ -70,7 +70,6 @@
             this.Controls.Add(this.passImageBox);
             this.Name = "PassImageForm";
             this.Text = "PassImageForm";
-            this.Load += new System.EventHandler(this.PassImageForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.passImageBox)).EndInit();
             this.ResumeLayout(false);
 
