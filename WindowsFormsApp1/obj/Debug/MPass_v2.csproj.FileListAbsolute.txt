@@ -52,3 +52,4 @@ E:\VB-Scripting\MPass_v0.2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\VB-Scripting\MPass_v0.2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 E:\VB-Scripting\MPass_v0.2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MulakatUK.resources
 E:\VB-Scripting\MPass_v0.2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GPass.resources
+E:\VB-Scripting\MPass_v0.2\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MulakatPrintScreen.resources

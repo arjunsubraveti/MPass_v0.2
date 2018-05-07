@@ -53,6 +53,12 @@
       <DependentUpon>GPass.cs</DependentUpon>
     </Compile>
     <Compile Include="GpassFormHandler.cs" />
+    <Compile Include="MulakatPrintScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MulakatPrintScreen.Designer.cs">
+      <DependentUpon>MulakatPrintScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MulakatUK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GPass.resx">
       <DependentUpon>GPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MulakatPrintScreen.resx">
+      <DependentUpon>MulakatPrintScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MulakatUK.resx">
       <DependentUpon>MulakatUK.cs</DependentUpon>
@@ -106,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UKPLOGO.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

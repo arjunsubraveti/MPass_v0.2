@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GPass));
             this.btnReport = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -900,7 +899,7 @@
             // 
             // displayImageBox
             // 
-            this.displayImageBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("displayImageBox.InitialImage")));
+            this.displayImageBox.InitialImage = global::WindowsFormsApp1.Properties.Resources.NoImage;
             this.displayImageBox.Location = new System.Drawing.Point(777, 131);
             this.displayImageBox.Name = "displayImageBox";
             this.displayImageBox.Size = new System.Drawing.Size(130, 130);
@@ -908,7 +907,7 @@
             this.displayImageBox.TabStop = false;
             this.displayImageBox.Click += new System.EventHandler(this.displayImageBox_Click);
             // 
-            // Form1
+            // GPass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -999,7 +998,7 @@
             this.Controls.Add(this.lblSNo);
             this.Controls.Add(this.lblSubTitle);
             this.Controls.Add(this.lblTitle);
-            this.Name = "Form1";
+            this.Name = "GPass";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.displayImageBox)).EndInit();
@@ -1095,7 +1094,7 @@
         internal System.Windows.Forms.ComboBox drdDOA3;
         internal System.Windows.Forms.ComboBox drdDOA2;
         internal System.Windows.Forms.ComboBox drdDOA1;
-        private System.Windows.Forms.PictureBox displayImageBox;
+        public System.Windows.Forms.PictureBox displayImageBox;
     }
 }
 

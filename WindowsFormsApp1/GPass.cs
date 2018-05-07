@@ -21,6 +21,8 @@ namespace WindowsFormsApp1
         private IGpassDB objIGpassDB;
         private GpassFormHandler objGpassFormHandler;
         private PassImageForm passImage;
+        private MulakatPrintScreen mps;
+
         private Timer tm = new Timer();
 
         private GpassFormHandler CreateNewGpassFormHandler()
@@ -97,6 +99,7 @@ namespace WindowsFormsApp1
         {
             txtSNo.Text = objIGpassDB.RetrieveSerialNumber().ToString();
             txtDate.Text = DateTime.Now.ToShortDateString();
+            displayImageBox.Image = displayImageBox.InitialImage;
             tm.Tick += new EventHandler(tm_Tick);
             tm.Interval = 1000;
             tm.Enabled = true;
@@ -268,7 +271,18 @@ namespace WindowsFormsApp1
             //Call Print methods
             //Disable Print
             //Show messagebox that data has been printed
-            btnPrint.Enabled = false;
+            mps = mps ?? new MulakatPrintScreen();
+            mps.LoadPrintData(this);
+            mps.Show();
+            if(mps.FinishedPrinting)
+            {
+                btnPrint.Enabled = false;
+            }
+            else
+            {
+                btnPrint.Enabled = true;
+            }
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -281,6 +295,7 @@ namespace WindowsFormsApp1
             btnPrint.Enabled = true;
             btnPhotoCapture.Enabled = true;
             displayImageBox.Image = displayImageBox.InitialImage;
+            btnPrint.Enabled = true;
         }
 
         private void btnPhotoCapture_Click(object sender, EventArgs e)
