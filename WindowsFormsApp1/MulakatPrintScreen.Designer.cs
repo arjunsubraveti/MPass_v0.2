@@ -127,8 +127,11 @@
             this.valAadhaar2 = new System.Windows.Forms.Label();
             this.valAadhaar1 = new System.Windows.Forms.Label();
             this.lblAadhaar = new System.Windows.Forms.Label();
+            this.btnConfirmPrint = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.valPassPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label36
@@ -410,7 +413,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(45, 111);
+            this.label10.Location = new System.Drawing.Point(45, 108);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(700, 13);
             this.label10.TabIndex = 48;
@@ -420,7 +423,7 @@
             // 
             this.lblMTime.AutoSize = true;
             this.lblMTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMTime.Location = new System.Drawing.Point(607, 91);
+            this.lblMTime.Location = new System.Drawing.Point(607, 88);
             this.lblMTime.Name = "lblMTime";
             this.lblMTime.Size = new System.Drawing.Size(82, 20);
             this.lblMTime.TabIndex = 47;
@@ -430,7 +433,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(304, 91);
+            this.lblTime.Location = new System.Drawing.Point(304, 88);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(42, 20);
             this.lblTime.TabIndex = 46;
@@ -440,7 +443,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(180, 91);
+            this.lblDate.Location = new System.Drawing.Point(180, 88);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(45, 20);
             this.lblDate.TabIndex = 45;
@@ -450,7 +453,7 @@
             // 
             this.lblSNo.AutoSize = true;
             this.lblSNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSNo.Location = new System.Drawing.Point(61, 91);
+            this.lblSNo.Location = new System.Drawing.Point(61, 88);
             this.lblSNo.Name = "lblSNo";
             this.lblSNo.Size = new System.Drawing.Size(46, 20);
             this.lblSNo.TabIndex = 44;
@@ -460,7 +463,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(464, 18);
+            this.label4.Location = new System.Drawing.Point(464, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(264, 20);
             this.label4.TabIndex = 43;
@@ -470,7 +473,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(464, 55);
+            this.label3.Location = new System.Drawing.Point(464, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 24);
             this.label3.TabIndex = 42;
@@ -479,7 +482,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(394, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(394, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 68);
             this.pictureBox1.TabIndex = 41;
@@ -489,7 +492,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(250, 55);
+            this.label2.Location = new System.Drawing.Point(250, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 24);
@@ -500,7 +503,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 18);
+            this.label1.Location = new System.Drawing.Point(136, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 29);
@@ -510,7 +513,7 @@
             // valSNo
             // 
             this.valSNo.AutoSize = true;
-            this.valSNo.Location = new System.Drawing.Point(113, 96);
+            this.valSNo.Location = new System.Drawing.Point(113, 93);
             this.valSNo.Name = "valSNo";
             this.valSNo.Size = new System.Drawing.Size(57, 13);
             this.valSNo.TabIndex = 77;
@@ -519,7 +522,7 @@
             // valDate
             // 
             this.valDate.AutoSize = true;
-            this.valDate.Location = new System.Drawing.Point(231, 96);
+            this.valDate.Location = new System.Drawing.Point(231, 93);
             this.valDate.Name = "valDate";
             this.valDate.Size = new System.Drawing.Size(53, 13);
             this.valDate.TabIndex = 78;
@@ -528,7 +531,7 @@
             // valTime
             // 
             this.valTime.AutoSize = true;
-            this.valTime.Location = new System.Drawing.Point(352, 96);
+            this.valTime.Location = new System.Drawing.Point(352, 93);
             this.valTime.Name = "valTime";
             this.valTime.Size = new System.Drawing.Size(53, 13);
             this.valTime.TabIndex = 79;
@@ -537,7 +540,7 @@
             // valMTime
             // 
             this.valMTime.AutoSize = true;
-            this.valMTime.Location = new System.Drawing.Point(692, 96);
+            this.valMTime.Location = new System.Drawing.Point(692, 93);
             this.valMTime.Name = "valMTime";
             this.valMTime.Size = new System.Drawing.Size(53, 13);
             this.valMTime.TabIndex = 80;
@@ -1048,116 +1051,135 @@
             this.lblAadhaar.TabIndex = 132;
             this.lblAadhaar.Text = "आईडी विवरण";
             // 
+            // btnConfirmPrint
+            // 
+            this.btnConfirmPrint.Location = new System.Drawing.Point(708, 640);
+            this.btnConfirmPrint.Name = "btnConfirmPrint";
+            this.btnConfirmPrint.Size = new System.Drawing.Size(99, 36);
+            this.btnConfirmPrint.TabIndex = 137;
+            this.btnConfirmPrint.Text = "Confirm Print";
+            this.btnConfirmPrint.UseVisualStyleBackColor = true;
+            this.btnConfirmPrint.Click += new System.EventHandler(this.btnConfirmPrint_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.valMTime);
+            this.panel1.Controls.Add(this.valTime);
+            this.panel1.Controls.Add(this.valDate);
+            this.panel1.Controls.Add(this.valSNo);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.lblMTime);
+            this.panel1.Controls.Add(this.lblTime);
+            this.panel1.Controls.Add(this.lblDate);
+            this.panel1.Controls.Add(this.lblSNo);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.valAadhaar4);
+            this.panel1.Controls.Add(this.valAadhaar3);
+            this.panel1.Controls.Add(this.valAadhaar2);
+            this.panel1.Controls.Add(this.valAadhaar1);
+            this.panel1.Controls.Add(this.lblAadhaar);
+            this.panel1.Controls.Add(this.valMoney);
+            this.panel1.Controls.Add(this.valArticles);
+            this.panel1.Controls.Add(this.valPurpose);
+            this.panel1.Controls.Add(this.valAddress4);
+            this.panel1.Controls.Add(this.valAddress3);
+            this.panel1.Controls.Add(this.valAddress2);
+            this.panel1.Controls.Add(this.valAddress1);
+            this.panel1.Controls.Add(this.valMobile4);
+            this.panel1.Controls.Add(this.valMobile3);
+            this.panel1.Controls.Add(this.valMobile2);
+            this.panel1.Controls.Add(this.valMobile1);
+            this.panel1.Controls.Add(this.valIDProof4);
+            this.panel1.Controls.Add(this.valIDProof3);
+            this.panel1.Controls.Add(this.valIDProof2);
+            this.panel1.Controls.Add(this.valIDProof1);
+            this.panel1.Controls.Add(this.valRelation4);
+            this.panel1.Controls.Add(this.valRelation3);
+            this.panel1.Controls.Add(this.valRelation2);
+            this.panel1.Controls.Add(this.valRelation1);
+            this.panel1.Controls.Add(this.valVisitorName4);
+            this.panel1.Controls.Add(this.valVisitorName3);
+            this.panel1.Controls.Add(this.valVisitorName2);
+            this.panel1.Controls.Add(this.valVisitorName1);
+            this.panel1.Controls.Add(this.valDistrict4);
+            this.panel1.Controls.Add(this.valDistrict3);
+            this.panel1.Controls.Add(this.valDistrict2);
+            this.panel1.Controls.Add(this.valDistrict1);
+            this.panel1.Controls.Add(this.valPS4);
+            this.panel1.Controls.Add(this.valPS3);
+            this.panel1.Controls.Add(this.valPS2);
+            this.panel1.Controls.Add(this.valPS1);
+            this.panel1.Controls.Add(this.valCase4);
+            this.panel1.Controls.Add(this.valCase3);
+            this.panel1.Controls.Add(this.valCase2);
+            this.panel1.Controls.Add(this.valCase1);
+            this.panel1.Controls.Add(this.valDOA4);
+            this.panel1.Controls.Add(this.valDOA3);
+            this.panel1.Controls.Add(this.valDOA2);
+            this.panel1.Controls.Add(this.valDOA1);
+            this.panel1.Controls.Add(this.valUTxCT4);
+            this.panel1.Controls.Add(this.valUTxCT3);
+            this.panel1.Controls.Add(this.valUTxCT2);
+            this.panel1.Controls.Add(this.valUTxCT1);
+            this.panel1.Controls.Add(this.valFatherName4);
+            this.panel1.Controls.Add(this.valFatherName3);
+            this.panel1.Controls.Add(this.valFatherName2);
+            this.panel1.Controls.Add(this.valFatherName1);
+            this.panel1.Controls.Add(this.valPrisonerName4);
+            this.panel1.Controls.Add(this.valPrisonerName3);
+            this.panel1.Controls.Add(this.valPrisonerName2);
+            this.panel1.Controls.Add(this.valPrisonerName1);
+            this.panel1.Controls.Add(this.label36);
+            this.panel1.Controls.Add(this.label35);
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Controls.Add(this.label32);
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.lblMoney);
+            this.panel1.Controls.Add(this.lblArticles);
+            this.panel1.Controls.Add(this.lblPurpose);
+            this.panel1.Controls.Add(this.lblAddress);
+            this.panel1.Controls.Add(this.lblIDProof);
+            this.panel1.Controls.Add(this.lblMobile);
+            this.panel1.Controls.Add(this.lblRelation);
+            this.panel1.Controls.Add(this.lblVisitorName);
+            this.panel1.Controls.Add(this.lblDistrict);
+            this.panel1.Controls.Add(this.lblPS);
+            this.panel1.Controls.Add(this.lblCase);
+            this.panel1.Controls.Add(this.lblDOA);
+            this.panel1.Controls.Add(this.lblUTxCT);
+            this.panel1.Controls.Add(this.lblFatherName);
+            this.panel1.Controls.Add(this.lblPrisonerName);
+            this.panel1.Controls.Add(this.valPassPic);
+            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(828, 717);
+            this.panel1.TabIndex = 138;
+            // 
             // MulakatPrintScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 718);
-            this.Controls.Add(this.valAadhaar4);
-            this.Controls.Add(this.valAadhaar3);
-            this.Controls.Add(this.valAadhaar2);
-            this.Controls.Add(this.valAadhaar1);
-            this.Controls.Add(this.lblAadhaar);
-            this.Controls.Add(this.valMoney);
-            this.Controls.Add(this.valArticles);
-            this.Controls.Add(this.valPurpose);
-            this.Controls.Add(this.valAddress4);
-            this.Controls.Add(this.valAddress3);
-            this.Controls.Add(this.valAddress2);
-            this.Controls.Add(this.valAddress1);
-            this.Controls.Add(this.valMobile4);
-            this.Controls.Add(this.valMobile3);
-            this.Controls.Add(this.valMobile2);
-            this.Controls.Add(this.valMobile1);
-            this.Controls.Add(this.valIDProof4);
-            this.Controls.Add(this.valIDProof3);
-            this.Controls.Add(this.valIDProof2);
-            this.Controls.Add(this.valIDProof1);
-            this.Controls.Add(this.valRelation4);
-            this.Controls.Add(this.valRelation3);
-            this.Controls.Add(this.valRelation2);
-            this.Controls.Add(this.valRelation1);
-            this.Controls.Add(this.valVisitorName4);
-            this.Controls.Add(this.valVisitorName3);
-            this.Controls.Add(this.valVisitorName2);
-            this.Controls.Add(this.valVisitorName1);
-            this.Controls.Add(this.valDistrict4);
-            this.Controls.Add(this.valDistrict3);
-            this.Controls.Add(this.valDistrict2);
-            this.Controls.Add(this.valDistrict1);
-            this.Controls.Add(this.valPS4);
-            this.Controls.Add(this.valPS3);
-            this.Controls.Add(this.valPS2);
-            this.Controls.Add(this.valPS1);
-            this.Controls.Add(this.valCase4);
-            this.Controls.Add(this.valCase3);
-            this.Controls.Add(this.valCase2);
-            this.Controls.Add(this.valCase1);
-            this.Controls.Add(this.valDOA4);
-            this.Controls.Add(this.valDOA3);
-            this.Controls.Add(this.valDOA2);
-            this.Controls.Add(this.valDOA1);
-            this.Controls.Add(this.valUTxCT4);
-            this.Controls.Add(this.valUTxCT3);
-            this.Controls.Add(this.valUTxCT2);
-            this.Controls.Add(this.valUTxCT1);
-            this.Controls.Add(this.valFatherName4);
-            this.Controls.Add(this.valFatherName3);
-            this.Controls.Add(this.valFatherName2);
-            this.Controls.Add(this.valFatherName1);
-            this.Controls.Add(this.valPrisonerName4);
-            this.Controls.Add(this.valPrisonerName3);
-            this.Controls.Add(this.valPrisonerName2);
-            this.Controls.Add(this.valPrisonerName1);
-            this.Controls.Add(this.valMTime);
-            this.Controls.Add(this.valTime);
-            this.Controls.Add(this.valDate);
-            this.Controls.Add(this.valSNo);
-            this.Controls.Add(this.label36);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.lblMoney);
-            this.Controls.Add(this.lblArticles);
-            this.Controls.Add(this.lblPurpose);
-            this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.lblIDProof);
-            this.Controls.Add(this.lblMobile);
-            this.Controls.Add(this.lblRelation);
-            this.Controls.Add(this.lblVisitorName);
-            this.Controls.Add(this.lblDistrict);
-            this.Controls.Add(this.lblPS);
-            this.Controls.Add(this.lblCase);
-            this.Controls.Add(this.lblDOA);
-            this.Controls.Add(this.lblUTxCT);
-            this.Controls.Add(this.lblFatherName);
-            this.Controls.Add(this.lblPrisonerName);
-            this.Controls.Add(this.valPassPic);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.lblMTime);
-            this.Controls.Add(this.lblTime);
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblSNo);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnConfirmPrint);
+            this.Controls.Add(this.panel1);
             this.Name = "MulakatPrintScreen";
             this.Text = "MulakatPrintScreen";
-            this.Load += new System.EventHandler(this.MulakatPrintScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.valPassPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1261,5 +1283,7 @@
         private System.Windows.Forms.Label valAadhaar2;
         private System.Windows.Forms.Label valAadhaar1;
         private System.Windows.Forms.Label lblAadhaar;
+        private System.Windows.Forms.Button btnConfirmPrint;
+        private System.Windows.Forms.Panel panel1;
     }
 }

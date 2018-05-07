@@ -176,6 +176,7 @@ namespace WindowsFormsApp1
 
         private void CaptureFormText()
         {
+            tm.Enabled = false;
             objGPass.OnlyDate = txtDate.Text;
             objGPass.OnlyTime = txtTime.Text;
 
@@ -271,17 +272,19 @@ namespace WindowsFormsApp1
             //Call Print methods
             //Disable Print
             //Show messagebox that data has been printed
-            mps = mps ?? new MulakatPrintScreen();
+            mps = new MulakatPrintScreen();
             mps.LoadPrintData(this);
             mps.Show();
-            if(mps.FinishedPrinting)
-            {
-                btnPrint.Enabled = false;
-            }
-            else
-            {
-                btnPrint.Enabled = true;
-            }
+            
+            
+            //if(mps.FinishedPrinting)
+            //{
+            //    btnPrint.Enabled = false;
+            //}
+            //else
+            //{
+            //    btnPrint.Enabled = true;
+            //}
             
         }
 
@@ -290,12 +293,14 @@ namespace WindowsFormsApp1
             objGpassFormHandler.EmptyTextBoxes(this);
             LoadFormElements();
             objGPass = new GpassEntity();
+            mps = new MulakatPrintScreen();
             objGpassFormHandler.EnableBoxes(this);
             btnSave.Enabled = true;
             btnPrint.Enabled = true;
             btnPhotoCapture.Enabled = true;
             displayImageBox.Image = displayImageBox.InitialImage;
             btnPrint.Enabled = true;
+            tm.Enabled = true;
         }
 
         private void btnPhotoCapture_Click(object sender, EventArgs e)
@@ -321,10 +326,6 @@ namespace WindowsFormsApp1
             return true;
         }
 
-        private void displayImageBox_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

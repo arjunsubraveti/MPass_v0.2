@@ -905,7 +905,6 @@
             this.displayImageBox.Size = new System.Drawing.Size(130, 130);
             this.displayImageBox.TabIndex = 190;
             this.displayImageBox.TabStop = false;
-            this.displayImageBox.Click += new System.EventHandler(this.displayImageBox_Click);
             // 
             // GPass
             // 

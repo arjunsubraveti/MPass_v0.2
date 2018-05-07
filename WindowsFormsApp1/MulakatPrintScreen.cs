@@ -15,35 +15,59 @@ namespace WindowsFormsApp1
     {
         private Bitmap memoryImage;
         private PrintDocument printDocument1 = new PrintDocument();
+        PrintPreviewDialog previewdlg = new PrintPreviewDialog();
+        Panel pannel = null;
+
         public bool FinishedPrinting;
 
         public MulakatPrintScreen()
         {
             InitializeComponent();
-
-        }
-
-        private void MulakatPrintScreen_Load(object sender, EventArgs e)
-        {
-            CaptureScreen();
-            printDocument1.Print();
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
 
         }
 
-        private void CaptureScreen()
+
+        public void GetPrintArea(Panel pnl)
         {
-            Graphics myGraphics = this.CreateGraphics();
-            Size s = this.Size;
-            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+            memoryImage = new Bitmap(pnl.Width, pnl.Height);
+            pnl.DrawToBitmap(memoryImage, new Rectangle(0, 0, pnl.Width, pnl.Height));
         }
+
+        //private void CaptureScreen()
+        //{
+        //    Graphics myGraphics = this.CreateGraphics();
+        //    Size s = this.Size;
+        //    memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+        //    Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+        //    memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+        //}
 
         private void printDocument1_PrintPage(System.Object sender, PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(memoryImage, 0, 0);
-            FinishedPrinting = true;
+            //e.Graphics.DrawImage(memoryImage, 0, 0);
+            //FinishedPrinting = true;
+
+            Rectangle pagearea = e.PageBounds;
+            e.Graphics.DrawImage(memoryImage, (pagearea.Width / 2) - (this.panel1.Width / 2), this.panel1.Location.Y);
+        }
+    
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            if (memoryImage != null)
+            {
+                e.Graphics.DrawImage(memoryImage, 0, 0);
+                base.OnPaint(e);
+            }
+        }
+
+        public void Print(Panel pnl)
+        {
+            pannel = pnl;
+            GetPrintArea(pnl);
+            previewdlg.Document = printDocument1;
+            previewdlg.ShowDialog();
         }
 
         public void LoadPrintData (GPass gpass)
@@ -127,6 +151,15 @@ namespace WindowsFormsApp1
             valArticles.Text = gpass.drdArticles.Text;
             valMoney.Text = gpass.txtMoney.Text;
 
+           
+
+        }
+
+        private void btnConfirmPrint_Click(object sender, EventArgs e)
+        {
+            btnConfirmPrint.Hide();
+            Print(this.panel1); 
+           
         }
     }
 }
