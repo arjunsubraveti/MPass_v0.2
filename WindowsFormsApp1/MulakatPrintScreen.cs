@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace MulakatPassUK
 {
     public partial class MulakatPrintScreen : Form
     {
@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            
 
         }
 
@@ -155,11 +156,11 @@ namespace WindowsFormsApp1
 
         }
 
-        private void btnConfirmPrint_Click(object sender, EventArgs e)
+        private void MulakatPrintScreen_Load(object sender, EventArgs e)
         {
-            btnConfirmPrint.Hide();
-            Print(this.panel1); 
-           
+            Print(this.panel1);
         }
+
+
     }
 }

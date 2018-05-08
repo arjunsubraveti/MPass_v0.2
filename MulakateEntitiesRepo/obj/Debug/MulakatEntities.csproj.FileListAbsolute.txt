@@ -1,0 +1,11 @@
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\bin\Debug\MulakatDataRepository.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\bin\Debug\MulakatDataRepository.pdb
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatEntities.csproj.CoreCompileInputs.cache
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.dll
+C:\Users\Arjun Subraveti\source\repos\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\bin\Debug\MulakatDataRepository.dll
+E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\bin\Debug\MulakatDataRepository.pdb
+E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatEntities.csprojResolveAssemblyReference.cache
+E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatEntities.csproj.CoreCompileInputs.cache
+E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.dll
+E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.pdb

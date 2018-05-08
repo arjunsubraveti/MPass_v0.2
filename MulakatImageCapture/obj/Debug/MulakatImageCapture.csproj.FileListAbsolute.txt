@@ -32,10 +32,10 @@ E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\sv\ZedGraph.resources.d
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\tr\ZedGraph.resources.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\zh-cn\ZedGraph.resources.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\bin\Debug\zh-tw\ZedGraph.resources.dll
+E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csprojResolveAssemblyReference.cache
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.PassImageForm.resources
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.GenerateResource.cache
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.CoreCompileInputs.cache
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csproj.CopyComplete
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.dll
 E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.pdb
-E:\VB-Scripting\MPass_v0.2\MulakatImageCapture\obj\Debug\MulakatImageCapture.csprojResolveAssemblyReference.cache

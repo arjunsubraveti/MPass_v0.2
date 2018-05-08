@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace MulakatPassUK
 {
     partial class MulakatPrintScreen
     {
@@ -127,7 +127,6 @@
             this.valAadhaar2 = new System.Windows.Forms.Label();
             this.valAadhaar1 = new System.Windows.Forms.Label();
             this.lblAadhaar = new System.Windows.Forms.Label();
-            this.btnConfirmPrint = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.valPassPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -138,7 +137,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(220, 586);
+            this.label36.Location = new System.Drawing.Point(210, 610);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(126, 20);
             this.label36.TabIndex = 76;
@@ -148,7 +147,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(119, 586);
+            this.label35.Location = new System.Drawing.Point(109, 610);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(95, 15);
             this.label35.TabIndex = 75;
@@ -157,7 +156,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(63, 692);
+            this.label34.Location = new System.Drawing.Point(52, 708);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(240, 13);
             this.label34.TabIndex = 74;
@@ -167,7 +166,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(556, 658);
+            this.label33.Location = new System.Drawing.Point(545, 674);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(91, 15);
             this.label33.TabIndex = 73;
@@ -177,7 +176,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(356, 658);
+            this.label32.Location = new System.Drawing.Point(345, 674);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(130, 15);
             this.label32.TabIndex = 72;
@@ -187,7 +186,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(221, 658);
+            this.label31.Location = new System.Drawing.Point(210, 674);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(37, 15);
             this.label31.TabIndex = 71;
@@ -197,7 +196,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(63, 658);
+            this.label30.Location = new System.Drawing.Point(52, 674);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(75, 15);
             this.label30.TabIndex = 70;
@@ -207,7 +206,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(556, 640);
+            this.label29.Location = new System.Drawing.Point(545, 656);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(49, 20);
             this.label29.TabIndex = 69;
@@ -217,7 +216,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(356, 640);
+            this.label28.Location = new System.Drawing.Point(345, 656);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(67, 20);
             this.label28.TabIndex = 68;
@@ -227,7 +226,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(221, 640);
+            this.label27.Location = new System.Drawing.Point(210, 656);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(33, 20);
             this.label27.TabIndex = 67;
@@ -237,7 +236,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(63, 640);
+            this.label26.Location = new System.Drawing.Point(52, 656);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(58, 20);
             this.label26.TabIndex = 66;
@@ -247,7 +246,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(62, 583);
+            this.label25.Location = new System.Drawing.Point(52, 607);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(44, 20);
             this.label25.TabIndex = 65;
@@ -257,7 +256,7 @@
             // 
             this.lblMoney.AutoSize = true;
             this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.Location = new System.Drawing.Point(638, 550);
+            this.lblMoney.Location = new System.Drawing.Point(638, 567);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(61, 20);
             this.lblMoney.TabIndex = 64;
@@ -267,7 +266,7 @@
             // 
             this.lblArticles.AutoSize = true;
             this.lblArticles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticles.Location = new System.Drawing.Point(352, 550);
+            this.lblArticles.Location = new System.Drawing.Point(352, 567);
             this.lblArticles.Name = "lblArticles";
             this.lblArticles.Size = new System.Drawing.Size(74, 20);
             this.lblArticles.TabIndex = 63;
@@ -276,7 +275,7 @@
             // lblPurpose
             // 
             this.lblPurpose.AutoSize = true;
-            this.lblPurpose.Location = new System.Drawing.Point(67, 551);
+            this.lblPurpose.Location = new System.Drawing.Point(67, 568);
             this.lblPurpose.Name = "lblPurpose";
             this.lblPurpose.Size = new System.Drawing.Size(98, 13);
             this.lblPurpose.TabIndex = 62;
@@ -286,7 +285,7 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(575, 420);
+            this.lblAddress.Location = new System.Drawing.Point(529, 435);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(71, 20);
             this.lblAddress.TabIndex = 61;
@@ -296,7 +295,7 @@
             // 
             this.lblIDProof.AutoSize = true;
             this.lblIDProof.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDProof.Location = new System.Drawing.Point(289, 420);
+            this.lblIDProof.Location = new System.Drawing.Point(258, 435);
             this.lblIDProof.Name = "lblIDProof";
             this.lblIDProof.Size = new System.Drawing.Size(41, 20);
             this.lblIDProof.TabIndex = 60;
@@ -306,7 +305,7 @@
             // 
             this.lblMobile.AutoSize = true;
             this.lblMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMobile.Location = new System.Drawing.Point(488, 420);
+            this.lblMobile.Location = new System.Drawing.Point(442, 435);
             this.lblMobile.Name = "lblMobile";
             this.lblMobile.Size = new System.Drawing.Size(46, 20);
             this.lblMobile.TabIndex = 59;
@@ -316,7 +315,7 @@
             // 
             this.lblRelation.AutoSize = true;
             this.lblRelation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRelation.Location = new System.Drawing.Point(181, 420);
+            this.lblRelation.Location = new System.Drawing.Point(168, 435);
             this.lblRelation.Name = "lblRelation";
             this.lblRelation.Size = new System.Drawing.Size(33, 20);
             this.lblRelation.TabIndex = 58;
@@ -326,7 +325,7 @@
             // 
             this.lblVisitorName.AutoSize = true;
             this.lblVisitorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVisitorName.Location = new System.Drawing.Point(60, 420);
+            this.lblVisitorName.Location = new System.Drawing.Point(61, 435);
             this.lblVisitorName.Name = "lblVisitorName";
             this.lblVisitorName.Size = new System.Drawing.Size(72, 20);
             this.lblVisitorName.TabIndex = 57;
@@ -336,7 +335,7 @@
             // 
             this.lblDistrict.AutoSize = true;
             this.lblDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistrict.Location = new System.Drawing.Point(672, 301);
+            this.lblDistrict.Location = new System.Drawing.Point(610, 293);
             this.lblDistrict.Name = "lblDistrict";
             this.lblDistrict.Size = new System.Drawing.Size(33, 20);
             this.lblDistrict.TabIndex = 56;
@@ -346,7 +345,7 @@
             // 
             this.lblPS.AutoSize = true;
             this.lblPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPS.Location = new System.Drawing.Point(579, 302);
+            this.lblPS.Location = new System.Drawing.Point(511, 294);
             this.lblPS.Name = "lblPS";
             this.lblPS.Size = new System.Drawing.Size(68, 20);
             this.lblPS.TabIndex = 55;
@@ -356,7 +355,7 @@
             // 
             this.lblCase.AutoSize = true;
             this.lblCase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCase.Location = new System.Drawing.Point(488, 301);
+            this.lblCase.Location = new System.Drawing.Point(431, 293);
             this.lblCase.Name = "lblCase";
             this.lblCase.Size = new System.Drawing.Size(63, 20);
             this.lblCase.TabIndex = 54;
@@ -366,7 +365,7 @@
             // 
             this.lblDOA.AutoSize = true;
             this.lblDOA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOA.Location = new System.Drawing.Point(401, 302);
+            this.lblDOA.Location = new System.Drawing.Point(344, 293);
             this.lblDOA.Name = "lblDOA";
             this.lblDOA.Size = new System.Drawing.Size(56, 20);
             this.lblDOA.TabIndex = 53;
@@ -376,17 +375,17 @@
             // 
             this.lblUTxCT.AutoSize = true;
             this.lblUTxCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUTxCT.Location = new System.Drawing.Point(305, 305);
+            this.lblUTxCT.Location = new System.Drawing.Point(259, 293);
             this.lblUTxCT.Name = "lblUTxCT";
-            this.lblUTxCT.Size = new System.Drawing.Size(41, 15);
+            this.lblUTxCT.Size = new System.Drawing.Size(61, 15);
             this.lblUTxCT.TabIndex = 52;
-            this.lblUTxCT.Text = "UT/CT";
+            this.lblUTxCT.Text = "अपराधी वर्ग";
             // 
             // lblFatherName
             // 
             this.lblFatherName.AutoSize = true;
             this.lblFatherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFatherName.Location = new System.Drawing.Point(181, 302);
+            this.lblFatherName.Location = new System.Drawing.Point(168, 290);
             this.lblFatherName.Name = "lblFatherName";
             this.lblFatherName.Size = new System.Drawing.Size(66, 20);
             this.lblFatherName.TabIndex = 51;
@@ -396,7 +395,7 @@
             // 
             this.lblPrisonerName.AutoSize = true;
             this.lblPrisonerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrisonerName.Location = new System.Drawing.Point(62, 302);
+            this.lblPrisonerName.Location = new System.Drawing.Point(65, 290);
             this.lblPrisonerName.Name = "lblPrisonerName";
             this.lblPrisonerName.Size = new System.Drawing.Size(72, 18);
             this.lblPrisonerName.TabIndex = 50;
@@ -404,7 +403,7 @@
             // 
             // valPassPic
             // 
-            this.valPassPic.Location = new System.Drawing.Point(355, 145);
+            this.valPassPic.Location = new System.Drawing.Point(355, 134);
             this.valPassPic.Name = "valPassPic";
             this.valPassPic.Size = new System.Drawing.Size(130, 130);
             this.valPassPic.TabIndex = 49;
@@ -542,14 +541,13 @@
             this.valMTime.AutoSize = true;
             this.valMTime.Location = new System.Drawing.Point(692, 93);
             this.valMTime.Name = "valMTime";
-            this.valMTime.Size = new System.Drawing.Size(53, 13);
+            this.valMTime.Size = new System.Drawing.Size(0, 13);
             this.valMTime.TabIndex = 80;
-            this.valMTime.Text = "xx-xx-xxxx";
             // 
             // valPrisonerName1
             // 
             this.valPrisonerName1.AutoSize = true;
-            this.valPrisonerName1.Location = new System.Drawing.Point(64, 329);
+            this.valPrisonerName1.Location = new System.Drawing.Point(67, 317);
             this.valPrisonerName1.Name = "valPrisonerName1";
             this.valPrisonerName1.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName1.TabIndex = 81;
@@ -558,7 +556,7 @@
             // valPrisonerName2
             // 
             this.valPrisonerName2.AutoSize = true;
-            this.valPrisonerName2.Location = new System.Drawing.Point(64, 352);
+            this.valPrisonerName2.Location = new System.Drawing.Point(67, 340);
             this.valPrisonerName2.Name = "valPrisonerName2";
             this.valPrisonerName2.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName2.TabIndex = 82;
@@ -567,7 +565,7 @@
             // valPrisonerName3
             // 
             this.valPrisonerName3.AutoSize = true;
-            this.valPrisonerName3.Location = new System.Drawing.Point(64, 374);
+            this.valPrisonerName3.Location = new System.Drawing.Point(67, 362);
             this.valPrisonerName3.Name = "valPrisonerName3";
             this.valPrisonerName3.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName3.TabIndex = 83;
@@ -576,7 +574,7 @@
             // valPrisonerName4
             // 
             this.valPrisonerName4.AutoSize = true;
-            this.valPrisonerName4.Location = new System.Drawing.Point(64, 396);
+            this.valPrisonerName4.Location = new System.Drawing.Point(67, 384);
             this.valPrisonerName4.Name = "valPrisonerName4";
             this.valPrisonerName4.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName4.TabIndex = 84;
@@ -585,7 +583,7 @@
             // valFatherName4
             // 
             this.valFatherName4.AutoSize = true;
-            this.valFatherName4.Location = new System.Drawing.Point(181, 396);
+            this.valFatherName4.Location = new System.Drawing.Point(168, 384);
             this.valFatherName4.Name = "valFatherName4";
             this.valFatherName4.Size = new System.Drawing.Size(57, 13);
             this.valFatherName4.TabIndex = 88;
@@ -594,7 +592,7 @@
             // valFatherName3
             // 
             this.valFatherName3.AutoSize = true;
-            this.valFatherName3.Location = new System.Drawing.Point(181, 374);
+            this.valFatherName3.Location = new System.Drawing.Point(168, 362);
             this.valFatherName3.Name = "valFatherName3";
             this.valFatherName3.Size = new System.Drawing.Size(57, 13);
             this.valFatherName3.TabIndex = 87;
@@ -603,7 +601,7 @@
             // valFatherName2
             // 
             this.valFatherName2.AutoSize = true;
-            this.valFatherName2.Location = new System.Drawing.Point(181, 352);
+            this.valFatherName2.Location = new System.Drawing.Point(168, 340);
             this.valFatherName2.Name = "valFatherName2";
             this.valFatherName2.Size = new System.Drawing.Size(57, 13);
             this.valFatherName2.TabIndex = 86;
@@ -612,7 +610,7 @@
             // valFatherName1
             // 
             this.valFatherName1.AutoSize = true;
-            this.valFatherName1.Location = new System.Drawing.Point(181, 329);
+            this.valFatherName1.Location = new System.Drawing.Point(168, 317);
             this.valFatherName1.Name = "valFatherName1";
             this.valFatherName1.Size = new System.Drawing.Size(57, 13);
             this.valFatherName1.TabIndex = 85;
@@ -621,7 +619,7 @@
             // valUTxCT4
             // 
             this.valUTxCT4.AutoSize = true;
-            this.valUTxCT4.Location = new System.Drawing.Point(297, 396);
+            this.valUTxCT4.Location = new System.Drawing.Point(259, 384);
             this.valUTxCT4.Name = "valUTxCT4";
             this.valUTxCT4.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT4.TabIndex = 92;
@@ -630,7 +628,7 @@
             // valUTxCT3
             // 
             this.valUTxCT3.AutoSize = true;
-            this.valUTxCT3.Location = new System.Drawing.Point(297, 374);
+            this.valUTxCT3.Location = new System.Drawing.Point(259, 362);
             this.valUTxCT3.Name = "valUTxCT3";
             this.valUTxCT3.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT3.TabIndex = 91;
@@ -639,7 +637,7 @@
             // valUTxCT2
             // 
             this.valUTxCT2.AutoSize = true;
-            this.valUTxCT2.Location = new System.Drawing.Point(297, 352);
+            this.valUTxCT2.Location = new System.Drawing.Point(259, 340);
             this.valUTxCT2.Name = "valUTxCT2";
             this.valUTxCT2.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT2.TabIndex = 90;
@@ -648,7 +646,7 @@
             // valUTxCT1
             // 
             this.valUTxCT1.AutoSize = true;
-            this.valUTxCT1.Location = new System.Drawing.Point(297, 329);
+            this.valUTxCT1.Location = new System.Drawing.Point(259, 317);
             this.valUTxCT1.Name = "valUTxCT1";
             this.valUTxCT1.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT1.TabIndex = 89;
@@ -657,7 +655,7 @@
             // valDOA4
             // 
             this.valDOA4.AutoSize = true;
-            this.valDOA4.Location = new System.Drawing.Point(402, 395);
+            this.valDOA4.Location = new System.Drawing.Point(345, 386);
             this.valDOA4.Name = "valDOA4";
             this.valDOA4.Size = new System.Drawing.Size(57, 13);
             this.valDOA4.TabIndex = 96;
@@ -666,7 +664,7 @@
             // valDOA3
             // 
             this.valDOA3.AutoSize = true;
-            this.valDOA3.Location = new System.Drawing.Point(402, 374);
+            this.valDOA3.Location = new System.Drawing.Point(345, 365);
             this.valDOA3.Name = "valDOA3";
             this.valDOA3.Size = new System.Drawing.Size(57, 13);
             this.valDOA3.TabIndex = 95;
@@ -675,7 +673,7 @@
             // valDOA2
             // 
             this.valDOA2.AutoSize = true;
-            this.valDOA2.Location = new System.Drawing.Point(402, 352);
+            this.valDOA2.Location = new System.Drawing.Point(345, 343);
             this.valDOA2.Name = "valDOA2";
             this.valDOA2.Size = new System.Drawing.Size(57, 13);
             this.valDOA2.TabIndex = 94;
@@ -684,7 +682,7 @@
             // valDOA1
             // 
             this.valDOA1.AutoSize = true;
-            this.valDOA1.Location = new System.Drawing.Point(402, 329);
+            this.valDOA1.Location = new System.Drawing.Point(345, 320);
             this.valDOA1.Name = "valDOA1";
             this.valDOA1.Size = new System.Drawing.Size(57, 13);
             this.valDOA1.TabIndex = 93;
@@ -693,7 +691,7 @@
             // valCase4
             // 
             this.valCase4.AutoSize = true;
-            this.valCase4.Location = new System.Drawing.Point(494, 395);
+            this.valCase4.Location = new System.Drawing.Point(432, 387);
             this.valCase4.Name = "valCase4";
             this.valCase4.Size = new System.Drawing.Size(57, 13);
             this.valCase4.TabIndex = 100;
@@ -702,7 +700,7 @@
             // valCase3
             // 
             this.valCase3.AutoSize = true;
-            this.valCase3.Location = new System.Drawing.Point(494, 373);
+            this.valCase3.Location = new System.Drawing.Point(432, 365);
             this.valCase3.Name = "valCase3";
             this.valCase3.Size = new System.Drawing.Size(57, 13);
             this.valCase3.TabIndex = 99;
@@ -711,7 +709,7 @@
             // valCase2
             // 
             this.valCase2.AutoSize = true;
-            this.valCase2.Location = new System.Drawing.Point(494, 351);
+            this.valCase2.Location = new System.Drawing.Point(432, 343);
             this.valCase2.Name = "valCase2";
             this.valCase2.Size = new System.Drawing.Size(57, 13);
             this.valCase2.TabIndex = 98;
@@ -720,7 +718,7 @@
             // valCase1
             // 
             this.valCase1.AutoSize = true;
-            this.valCase1.Location = new System.Drawing.Point(494, 328);
+            this.valCase1.Location = new System.Drawing.Point(432, 320);
             this.valCase1.Name = "valCase1";
             this.valCase1.Size = new System.Drawing.Size(57, 13);
             this.valCase1.TabIndex = 97;
@@ -729,7 +727,7 @@
             // valPS4
             // 
             this.valPS4.AutoSize = true;
-            this.valPS4.Location = new System.Drawing.Point(580, 396);
+            this.valPS4.Location = new System.Drawing.Point(518, 388);
             this.valPS4.Name = "valPS4";
             this.valPS4.Size = new System.Drawing.Size(57, 13);
             this.valPS4.TabIndex = 104;
@@ -738,7 +736,7 @@
             // valPS3
             // 
             this.valPS3.AutoSize = true;
-            this.valPS3.Location = new System.Drawing.Point(580, 374);
+            this.valPS3.Location = new System.Drawing.Point(518, 366);
             this.valPS3.Name = "valPS3";
             this.valPS3.Size = new System.Drawing.Size(57, 13);
             this.valPS3.TabIndex = 103;
@@ -747,7 +745,7 @@
             // valPS2
             // 
             this.valPS2.AutoSize = true;
-            this.valPS2.Location = new System.Drawing.Point(580, 352);
+            this.valPS2.Location = new System.Drawing.Point(518, 344);
             this.valPS2.Name = "valPS2";
             this.valPS2.Size = new System.Drawing.Size(57, 13);
             this.valPS2.TabIndex = 102;
@@ -756,7 +754,7 @@
             // valPS1
             // 
             this.valPS1.AutoSize = true;
-            this.valPS1.Location = new System.Drawing.Point(580, 329);
+            this.valPS1.Location = new System.Drawing.Point(518, 321);
             this.valPS1.Name = "valPS1";
             this.valPS1.Size = new System.Drawing.Size(57, 13);
             this.valPS1.TabIndex = 101;
@@ -765,7 +763,7 @@
             // valDistrict4
             // 
             this.valDistrict4.AutoSize = true;
-            this.valDistrict4.Location = new System.Drawing.Point(673, 395);
+            this.valDistrict4.Location = new System.Drawing.Point(611, 387);
             this.valDistrict4.Name = "valDistrict4";
             this.valDistrict4.Size = new System.Drawing.Size(57, 13);
             this.valDistrict4.TabIndex = 108;
@@ -774,7 +772,7 @@
             // valDistrict3
             // 
             this.valDistrict3.AutoSize = true;
-            this.valDistrict3.Location = new System.Drawing.Point(673, 373);
+            this.valDistrict3.Location = new System.Drawing.Point(611, 365);
             this.valDistrict3.Name = "valDistrict3";
             this.valDistrict3.Size = new System.Drawing.Size(57, 13);
             this.valDistrict3.TabIndex = 107;
@@ -783,7 +781,7 @@
             // valDistrict2
             // 
             this.valDistrict2.AutoSize = true;
-            this.valDistrict2.Location = new System.Drawing.Point(673, 351);
+            this.valDistrict2.Location = new System.Drawing.Point(611, 343);
             this.valDistrict2.Name = "valDistrict2";
             this.valDistrict2.Size = new System.Drawing.Size(57, 13);
             this.valDistrict2.TabIndex = 106;
@@ -792,7 +790,7 @@
             // valDistrict1
             // 
             this.valDistrict1.AutoSize = true;
-            this.valDistrict1.Location = new System.Drawing.Point(673, 328);
+            this.valDistrict1.Location = new System.Drawing.Point(611, 320);
             this.valDistrict1.Name = "valDistrict1";
             this.valDistrict1.Size = new System.Drawing.Size(57, 13);
             this.valDistrict1.TabIndex = 105;
@@ -801,7 +799,7 @@
             // valVisitorName4
             // 
             this.valVisitorName4.AutoSize = true;
-            this.valVisitorName4.Location = new System.Drawing.Point(64, 511);
+            this.valVisitorName4.Location = new System.Drawing.Point(65, 526);
             this.valVisitorName4.Name = "valVisitorName4";
             this.valVisitorName4.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName4.TabIndex = 112;
@@ -810,7 +808,7 @@
             // valVisitorName3
             // 
             this.valVisitorName3.AutoSize = true;
-            this.valVisitorName3.Location = new System.Drawing.Point(64, 489);
+            this.valVisitorName3.Location = new System.Drawing.Point(65, 504);
             this.valVisitorName3.Name = "valVisitorName3";
             this.valVisitorName3.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName3.TabIndex = 111;
@@ -819,7 +817,7 @@
             // valVisitorName2
             // 
             this.valVisitorName2.AutoSize = true;
-            this.valVisitorName2.Location = new System.Drawing.Point(64, 467);
+            this.valVisitorName2.Location = new System.Drawing.Point(65, 482);
             this.valVisitorName2.Name = "valVisitorName2";
             this.valVisitorName2.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName2.TabIndex = 110;
@@ -828,7 +826,7 @@
             // valVisitorName1
             // 
             this.valVisitorName1.AutoSize = true;
-            this.valVisitorName1.Location = new System.Drawing.Point(64, 444);
+            this.valVisitorName1.Location = new System.Drawing.Point(65, 459);
             this.valVisitorName1.Name = "valVisitorName1";
             this.valVisitorName1.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName1.TabIndex = 109;
@@ -837,7 +835,7 @@
             // valRelation4
             // 
             this.valRelation4.AutoSize = true;
-            this.valRelation4.Location = new System.Drawing.Point(168, 511);
+            this.valRelation4.Location = new System.Drawing.Point(169, 526);
             this.valRelation4.Name = "valRelation4";
             this.valRelation4.Size = new System.Drawing.Size(57, 13);
             this.valRelation4.TabIndex = 116;
@@ -846,7 +844,7 @@
             // valRelation3
             // 
             this.valRelation3.AutoSize = true;
-            this.valRelation3.Location = new System.Drawing.Point(168, 489);
+            this.valRelation3.Location = new System.Drawing.Point(169, 504);
             this.valRelation3.Name = "valRelation3";
             this.valRelation3.Size = new System.Drawing.Size(57, 13);
             this.valRelation3.TabIndex = 115;
@@ -855,7 +853,7 @@
             // valRelation2
             // 
             this.valRelation2.AutoSize = true;
-            this.valRelation2.Location = new System.Drawing.Point(168, 467);
+            this.valRelation2.Location = new System.Drawing.Point(169, 482);
             this.valRelation2.Name = "valRelation2";
             this.valRelation2.Size = new System.Drawing.Size(57, 13);
             this.valRelation2.TabIndex = 114;
@@ -864,7 +862,7 @@
             // valRelation1
             // 
             this.valRelation1.AutoSize = true;
-            this.valRelation1.Location = new System.Drawing.Point(168, 444);
+            this.valRelation1.Location = new System.Drawing.Point(169, 459);
             this.valRelation1.Name = "valRelation1";
             this.valRelation1.Size = new System.Drawing.Size(57, 13);
             this.valRelation1.TabIndex = 113;
@@ -873,7 +871,7 @@
             // valIDProof4
             // 
             this.valIDProof4.AutoSize = true;
-            this.valIDProof4.Location = new System.Drawing.Point(291, 511);
+            this.valIDProof4.Location = new System.Drawing.Point(260, 526);
             this.valIDProof4.Name = "valIDProof4";
             this.valIDProof4.Size = new System.Drawing.Size(57, 13);
             this.valIDProof4.TabIndex = 120;
@@ -882,7 +880,7 @@
             // valIDProof3
             // 
             this.valIDProof3.AutoSize = true;
-            this.valIDProof3.Location = new System.Drawing.Point(291, 489);
+            this.valIDProof3.Location = new System.Drawing.Point(260, 504);
             this.valIDProof3.Name = "valIDProof3";
             this.valIDProof3.Size = new System.Drawing.Size(57, 13);
             this.valIDProof3.TabIndex = 119;
@@ -891,7 +889,7 @@
             // valIDProof2
             // 
             this.valIDProof2.AutoSize = true;
-            this.valIDProof2.Location = new System.Drawing.Point(291, 467);
+            this.valIDProof2.Location = new System.Drawing.Point(260, 482);
             this.valIDProof2.Name = "valIDProof2";
             this.valIDProof2.Size = new System.Drawing.Size(57, 13);
             this.valIDProof2.TabIndex = 118;
@@ -900,7 +898,7 @@
             // valIDProof1
             // 
             this.valIDProof1.AutoSize = true;
-            this.valIDProof1.Location = new System.Drawing.Point(291, 444);
+            this.valIDProof1.Location = new System.Drawing.Point(260, 459);
             this.valIDProof1.Name = "valIDProof1";
             this.valIDProof1.Size = new System.Drawing.Size(57, 13);
             this.valIDProof1.TabIndex = 117;
@@ -909,7 +907,7 @@
             // valMobile4
             // 
             this.valMobile4.AutoSize = true;
-            this.valMobile4.Location = new System.Drawing.Point(487, 511);
+            this.valMobile4.Location = new System.Drawing.Point(441, 526);
             this.valMobile4.Name = "valMobile4";
             this.valMobile4.Size = new System.Drawing.Size(57, 13);
             this.valMobile4.TabIndex = 124;
@@ -918,7 +916,7 @@
             // valMobile3
             // 
             this.valMobile3.AutoSize = true;
-            this.valMobile3.Location = new System.Drawing.Point(487, 489);
+            this.valMobile3.Location = new System.Drawing.Point(441, 504);
             this.valMobile3.Name = "valMobile3";
             this.valMobile3.Size = new System.Drawing.Size(57, 13);
             this.valMobile3.TabIndex = 123;
@@ -927,7 +925,7 @@
             // valMobile2
             // 
             this.valMobile2.AutoSize = true;
-            this.valMobile2.Location = new System.Drawing.Point(487, 467);
+            this.valMobile2.Location = new System.Drawing.Point(441, 482);
             this.valMobile2.Name = "valMobile2";
             this.valMobile2.Size = new System.Drawing.Size(57, 13);
             this.valMobile2.TabIndex = 122;
@@ -936,7 +934,7 @@
             // valMobile1
             // 
             this.valMobile1.AutoSize = true;
-            this.valMobile1.Location = new System.Drawing.Point(487, 444);
+            this.valMobile1.Location = new System.Drawing.Point(441, 459);
             this.valMobile1.Name = "valMobile1";
             this.valMobile1.Size = new System.Drawing.Size(57, 13);
             this.valMobile1.TabIndex = 121;
@@ -945,7 +943,7 @@
             // valAddress4
             // 
             this.valAddress4.AutoSize = true;
-            this.valAddress4.Location = new System.Drawing.Point(579, 511);
+            this.valAddress4.Location = new System.Drawing.Point(533, 526);
             this.valAddress4.Name = "valAddress4";
             this.valAddress4.Size = new System.Drawing.Size(57, 13);
             this.valAddress4.TabIndex = 128;
@@ -954,7 +952,7 @@
             // valAddress3
             // 
             this.valAddress3.AutoSize = true;
-            this.valAddress3.Location = new System.Drawing.Point(579, 489);
+            this.valAddress3.Location = new System.Drawing.Point(533, 504);
             this.valAddress3.Name = "valAddress3";
             this.valAddress3.Size = new System.Drawing.Size(57, 13);
             this.valAddress3.TabIndex = 127;
@@ -963,7 +961,7 @@
             // valAddress2
             // 
             this.valAddress2.AutoSize = true;
-            this.valAddress2.Location = new System.Drawing.Point(579, 467);
+            this.valAddress2.Location = new System.Drawing.Point(533, 482);
             this.valAddress2.Name = "valAddress2";
             this.valAddress2.Size = new System.Drawing.Size(57, 13);
             this.valAddress2.TabIndex = 126;
@@ -972,7 +970,7 @@
             // valAddress1
             // 
             this.valAddress1.AutoSize = true;
-            this.valAddress1.Location = new System.Drawing.Point(579, 444);
+            this.valAddress1.Location = new System.Drawing.Point(533, 459);
             this.valAddress1.Name = "valAddress1";
             this.valAddress1.Size = new System.Drawing.Size(57, 13);
             this.valAddress1.TabIndex = 125;
@@ -981,7 +979,7 @@
             // valPurpose
             // 
             this.valPurpose.AutoSize = true;
-            this.valPurpose.Location = new System.Drawing.Point(172, 551);
+            this.valPurpose.Location = new System.Drawing.Point(172, 568);
             this.valPurpose.Name = "valPurpose";
             this.valPurpose.Size = new System.Drawing.Size(57, 13);
             this.valPurpose.TabIndex = 129;
@@ -990,7 +988,7 @@
             // valArticles
             // 
             this.valArticles.AutoSize = true;
-            this.valArticles.Location = new System.Drawing.Point(432, 555);
+            this.valArticles.Location = new System.Drawing.Point(432, 572);
             this.valArticles.Name = "valArticles";
             this.valArticles.Size = new System.Drawing.Size(57, 13);
             this.valArticles.TabIndex = 130;
@@ -999,7 +997,7 @@
             // valMoney
             // 
             this.valMoney.AutoSize = true;
-            this.valMoney.Location = new System.Drawing.Point(705, 555);
+            this.valMoney.Location = new System.Drawing.Point(705, 572);
             this.valMoney.Name = "valMoney";
             this.valMoney.Size = new System.Drawing.Size(57, 13);
             this.valMoney.TabIndex = 131;
@@ -1008,7 +1006,7 @@
             // valAadhaar4
             // 
             this.valAadhaar4.AutoSize = true;
-            this.valAadhaar4.Location = new System.Drawing.Point(392, 511);
+            this.valAadhaar4.Location = new System.Drawing.Point(346, 526);
             this.valAadhaar4.Name = "valAadhaar4";
             this.valAadhaar4.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar4.TabIndex = 136;
@@ -1017,7 +1015,7 @@
             // valAadhaar3
             // 
             this.valAadhaar3.AutoSize = true;
-            this.valAadhaar3.Location = new System.Drawing.Point(392, 489);
+            this.valAadhaar3.Location = new System.Drawing.Point(346, 504);
             this.valAadhaar3.Name = "valAadhaar3";
             this.valAadhaar3.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar3.TabIndex = 135;
@@ -1026,7 +1024,7 @@
             // valAadhaar2
             // 
             this.valAadhaar2.AutoSize = true;
-            this.valAadhaar2.Location = new System.Drawing.Point(392, 467);
+            this.valAadhaar2.Location = new System.Drawing.Point(346, 482);
             this.valAadhaar2.Name = "valAadhaar2";
             this.valAadhaar2.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar2.TabIndex = 134;
@@ -1035,7 +1033,7 @@
             // valAadhaar1
             // 
             this.valAadhaar1.AutoSize = true;
-            this.valAadhaar1.Location = new System.Drawing.Point(392, 444);
+            this.valAadhaar1.Location = new System.Drawing.Point(346, 459);
             this.valAadhaar1.Name = "valAadhaar1";
             this.valAadhaar1.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar1.TabIndex = 133;
@@ -1045,24 +1043,15 @@
             // 
             this.lblAadhaar.AutoSize = true;
             this.lblAadhaar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAadhaar.Location = new System.Drawing.Point(390, 420);
+            this.lblAadhaar.Location = new System.Drawing.Point(344, 435);
             this.lblAadhaar.Name = "lblAadhaar";
             this.lblAadhaar.Size = new System.Drawing.Size(76, 20);
             this.lblAadhaar.TabIndex = 132;
             this.lblAadhaar.Text = "आईडी विवरण";
             // 
-            // btnConfirmPrint
-            // 
-            this.btnConfirmPrint.Location = new System.Drawing.Point(708, 640);
-            this.btnConfirmPrint.Name = "btnConfirmPrint";
-            this.btnConfirmPrint.Size = new System.Drawing.Size(99, 36);
-            this.btnConfirmPrint.TabIndex = 137;
-            this.btnConfirmPrint.Text = "Confirm Print";
-            this.btnConfirmPrint.UseVisualStyleBackColor = true;
-            this.btnConfirmPrint.Click += new System.EventHandler(this.btnConfirmPrint_Click);
-            // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.valMTime);
             this.panel1.Controls.Add(this.valTime);
             this.panel1.Controls.Add(this.valDate);
@@ -1163,18 +1152,18 @@
             this.panel1.Controls.Add(this.valPassPic);
             this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 717);
+            this.panel1.Size = new System.Drawing.Size(828, 747);
             this.panel1.TabIndex = 138;
             // 
             // MulakatPrintScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 718);
-            this.Controls.Add(this.btnConfirmPrint);
+            this.ClientSize = new System.Drawing.Size(833, 749);
             this.Controls.Add(this.panel1);
             this.Name = "MulakatPrintScreen";
             this.Text = "MulakatPrintScreen";
+            this.Load += new System.EventHandler(this.MulakatPrintScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.valPassPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -1283,7 +1272,6 @@
         private System.Windows.Forms.Label valAadhaar2;
         private System.Windows.Forms.Label valAadhaar1;
         private System.Windows.Forms.Label lblAadhaar;
-        private System.Windows.Forms.Button btnConfirmPrint;
         private System.Windows.Forms.Panel panel1;
     }
 }

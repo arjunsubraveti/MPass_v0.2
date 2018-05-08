@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPass_v2", "WindowsFormsApp1\MPass_v2.csproj", "{727A68FC-A549-4B47-8C69-0C098A2A2C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatEntities", "MulakatDataRepository\MulakatEntities.csproj", "{DEC5394A-C452-4565-8605-A1FDB7B0F271}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatMiscellaneous", "MulakatMiscellaneousRepo\MulakatMiscellaneous.csproj", "{9A473B75-A977-49F4-B855-DA174EC8C765}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatImageCapture", "MulakatImageCapture\MulakatImageCapture.csproj", "{DBB6ECEF-7790-433B-9D1B-50C3DDB79AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatDataOps", "MulakatEntities\MulakatDataOps.csproj", "{881D02FA-B6D5-4964-86EE-64848124CA1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatEntities", "MulakateEntitiesRepo\MulakatEntities.csproj", "{DEC5394A-C452-4565-8605-A1FDB7B0F271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulakatDataOps", "MulakatDataRepo\MulakatDataOps.csproj", "{881D02FA-B6D5-4964-86EE-64848124CA1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{727A68FC-A549-4B47-8C69-0C098A2A2C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727A68FC-A549-4B47-8C69-0C098A2A2C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727A68FC-A549-4B47-8C69-0C098A2A2C6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A473B75-A977-49F4-B855-DA174EC8C765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A473B75-A977-49F4-B855-DA174EC8C765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A473B75-A977-49F4-B855-DA174EC8C765}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{DBB6ECEF-7790-433B-9D1B-50C3DDB79AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB6ECEF-7790-433B-9D1B-50C3DDB79AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB6ECEF-7790-433B-9D1B-50C3DDB79AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC5394A-C452-4565-8605-A1FDB7B0F271}.Release|Any CPU.Build.0 = Release|Any CPU
 		{881D02FA-B6D5-4964-86EE-64848124CA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{881D02FA-B6D5-4964-86EE-64848124CA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{881D02FA-B6D5-4964-86EE-64848124CA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -30,7 +30,6 @@
         {
             this.passImageBox = new System.Windows.Forms.PictureBox();
             this.btnCapture = new System.Windows.Forms.Button();
-            this.Camera_Selection = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.passImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,24 +51,16 @@
             this.btnCapture.UseVisualStyleBackColor = true;
             this.btnCapture.Click += new System.EventHandler(this.btnCapture_Click);
             // 
-            // Camera_Selection
-            // 
-            this.Camera_Selection.FormattingEnabled = true;
-            this.Camera_Selection.Location = new System.Drawing.Point(524, 141);
-            this.Camera_Selection.Name = "Camera_Selection";
-            this.Camera_Selection.Size = new System.Drawing.Size(230, 21);
-            this.Camera_Selection.TabIndex = 4;
-            // 
             // PassImageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Camera_Selection);
             this.Controls.Add(this.btnCapture);
             this.Controls.Add(this.passImageBox);
             this.Name = "PassImageForm";
             this.Text = "PassImageForm";
+            this.Load += new System.EventHandler(this.PassImageForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.passImageBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -79,6 +70,5 @@
 
         private System.Windows.Forms.PictureBox passImageBox;
         private System.Windows.Forms.Button btnCapture;
-        private System.Windows.Forms.ComboBox Camera_Selection;
     }
 }

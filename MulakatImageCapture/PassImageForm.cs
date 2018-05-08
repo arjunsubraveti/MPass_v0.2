@@ -19,6 +19,7 @@ namespace MulakatImageCapture
     {
         #region Variables
         #region Camera Capture Variables
+        public Mat frame;
         private VideoCapture _capture = null; //Camera
         public string tempFilePath;
         private bool _captureInProgress = false; //Variable to track camera state
@@ -32,17 +33,29 @@ namespace MulakatImageCapture
             //-> Find systems cameras with DirectShow.Net dll
             //thanks to carles lloret
             DsDevice[] _SystemCamereas = DsDevice.GetDevicesOfCat(FilterCategory.VideoInputDevice);
-            WebCams = new Video_Device[_SystemCamereas.Length];
-            for (int i = 0; i < _SystemCamereas.Length; i++)
+            if(_SystemCamereas.Length == 0)
             {
-                WebCams[i] = new Video_Device(i, _SystemCamereas[i].Name, _SystemCamereas[i].ClassID); //fill web cam array
-                Camera_Selection.Items.Add(WebCams[i].ToString());
+                MessageBox.Show("No camera devices found");
             }
-            if (Camera_Selection.Items.Count > 0)
+            else
             {
-                Camera_Selection.SelectedIndex = 0; //Set the selected device the default
+                WebCams = new Video_Device[_SystemCamereas.Length];
+                for (int i = 0; i < _SystemCamereas.Length; i++)
+                {
+                    WebCams[i] = new Video_Device(i, _SystemCamereas[i].Name, _SystemCamereas[i].ClassID); //fill web cam array
+                    //Camera_Selection.Items.Add(WebCams[i].ToString());
+                }
+
+                /*Camera_Selection.SelectedIndex = 0;*/ //Set the selected device the default
                 btnCapture.Enabled = true; //Enable the start
+                //if (Camera_Selection.Items.Count > 0)
+                //{
+                //    Camera_Selection.SelectedIndex = 0; //Set the selected device the default
+                //    btnCapture.Enabled = true; //Enable the start
+                //}
+
             }
+
         }
 
         private void ProcessFrame(object sender, EventArgs arg)
@@ -53,10 +66,8 @@ namespace MulakatImageCapture
             {
 
                 //Image<Bgr, Byte> image = _capture.QueryFrame().ToImage<Bgr, Byte>();
-                 Mat frame = new Mat();
+                 frame = frame ?? new Mat();
                 _capture.Retrieve(frame, 0);
-                tempFilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + "tmpImg.jpg";
-                frame.Save(tempFilePath);
                 DisplayImage(frame.Bitmap);
             }
             catch(Exception ex)
@@ -85,7 +96,6 @@ namespace MulakatImageCapture
             {
                 passImageBox.Image = Image;
                 
-
             }
         }
 
@@ -98,6 +108,7 @@ namespace MulakatImageCapture
 
             //Dispose of Capture if it was created before
             if (_capture != null) _capture.Dispose();
+
             try
             {
                 //Set up capture device
@@ -113,8 +124,6 @@ namespace MulakatImageCapture
 
         private void btnCapture_Click(object sender, EventArgs e)
         {
-            if (_capture != null)
-            {
                 if (_captureInProgress)
                 {
                     //stop the capture
@@ -125,24 +134,28 @@ namespace MulakatImageCapture
                 else
                 {
                     //Check to see if the selected device has changed
-                    if (Camera_Selection.SelectedIndex != CameraDevice)
-                    {
-                        SetupCapture(Camera_Selection.SelectedIndex); //Setup capture with the new device
-                    }
+                    //if (Camera_Selection.SelectedIndex != CameraDevice)
+                    //{
+                    //    SetupCapture(Camera_Selection.SelectedIndex); //Setup capture with the new device
+                    //}
 
                     btnCapture.Text = "Stop"; //Change text on button
                     _capture.Start(); //Start the capture
                     _captureInProgress = true; //Flag the state of the camera
                 }
 
-            }
-            else
-            {
-                //set up capture with selected device
-                SetupCapture(Camera_Selection.SelectedIndex);
-                //Be lazy and Recall this method to start camera
-                btnCapture_Click(null, null);
-            }
+        }
+
+
+
+
+        private void PassImageForm_Load(object sender, EventArgs e)
+        {
+
+            //set up capture with selected device
+            SetupCapture(0);
+            //Be lazy and Recall this method to start camera
+            btnCapture_Click(null, null);
 
         }
     }

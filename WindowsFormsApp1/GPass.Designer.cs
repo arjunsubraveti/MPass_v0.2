@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace MulakatPassUK
 {
     partial class GPass
     {
@@ -164,6 +164,7 @@
             // 
             this.txtMoney.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoney.Location = new System.Drawing.Point(649, 460);
+            this.txtMoney.MaxLength = 5;
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(105, 24);
             this.txtMoney.TabIndex = 169;
@@ -220,7 +221,7 @@
             // 
             this.drdRelation4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdRelation4.FormattingEnabled = true;
-            this.drdRelation4.Location = new System.Drawing.Point(171, 407);
+            this.drdRelation4.Location = new System.Drawing.Point(171, 411);
             this.drdRelation4.Name = "drdRelation4";
             this.drdRelation4.Size = new System.Drawing.Size(67, 24);
             this.drdRelation4.TabIndex = 163;
@@ -229,7 +230,7 @@
             // 
             this.drdRelation3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdRelation3.FormattingEnabled = true;
-            this.drdRelation3.Location = new System.Drawing.Point(171, 377);
+            this.drdRelation3.Location = new System.Drawing.Point(171, 381);
             this.drdRelation3.Name = "drdRelation3";
             this.drdRelation3.Size = new System.Drawing.Size(67, 24);
             this.drdRelation3.TabIndex = 162;
@@ -255,7 +256,7 @@
             // txtAddress4
             // 
             this.txtAddress4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress4.Location = new System.Drawing.Point(567, 406);
+            this.txtAddress4.Location = new System.Drawing.Point(581, 410);
             this.txtAddress4.Name = "txtAddress4";
             this.txtAddress4.Size = new System.Drawing.Size(186, 24);
             this.txtAddress4.TabIndex = 159;
@@ -263,7 +264,7 @@
             // txtAddress3
             // 
             this.txtAddress3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress3.Location = new System.Drawing.Point(568, 376);
+            this.txtAddress3.Location = new System.Drawing.Point(582, 381);
             this.txtAddress3.Name = "txtAddress3";
             this.txtAddress3.Size = new System.Drawing.Size(185, 24);
             this.txtAddress3.TabIndex = 158;
@@ -271,7 +272,7 @@
             // txtAddress2
             // 
             this.txtAddress2.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress2.Location = new System.Drawing.Point(568, 350);
+            this.txtAddress2.Location = new System.Drawing.Point(582, 350);
             this.txtAddress2.Name = "txtAddress2";
             this.txtAddress2.Size = new System.Drawing.Size(185, 24);
             this.txtAddress2.TabIndex = 157;
@@ -279,7 +280,8 @@
             // txtAddress1
             // 
             this.txtAddress1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress1.Location = new System.Drawing.Point(568, 320);
+            this.txtAddress1.Location = new System.Drawing.Point(582, 320);
+            this.txtAddress1.MaxLength = 15;
             this.txtAddress1.Name = "txtAddress1";
             this.txtAddress1.Size = new System.Drawing.Size(185, 24);
             this.txtAddress1.TabIndex = 156;
@@ -288,7 +290,7 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Arial Unicode MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(564, 297);
+            this.lblAddress.Location = new System.Drawing.Point(574, 297);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(82, 20);
             this.lblAddress.TabIndex = 155;
@@ -297,7 +299,7 @@
             // txtMobile4
             // 
             this.txtMobile4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile4.Location = new System.Drawing.Point(460, 407);
+            this.txtMobile4.Location = new System.Drawing.Point(471, 411);
             this.txtMobile4.Name = "txtMobile4";
             this.txtMobile4.Size = new System.Drawing.Size(105, 24);
             this.txtMobile4.TabIndex = 154;
@@ -305,7 +307,7 @@
             // txtMobile3
             // 
             this.txtMobile3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile3.Location = new System.Drawing.Point(461, 377);
+            this.txtMobile3.Location = new System.Drawing.Point(471, 381);
             this.txtMobile3.Name = "txtMobile3";
             this.txtMobile3.Size = new System.Drawing.Size(105, 24);
             this.txtMobile3.TabIndex = 153;
@@ -313,7 +315,7 @@
             // txtMobile2
             // 
             this.txtMobile2.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile2.Location = new System.Drawing.Point(461, 351);
+            this.txtMobile2.Location = new System.Drawing.Point(471, 350);
             this.txtMobile2.Name = "txtMobile2";
             this.txtMobile2.Size = new System.Drawing.Size(105, 24);
             this.txtMobile2.TabIndex = 152;
@@ -321,7 +323,8 @@
             // txtMobile1
             // 
             this.txtMobile1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile1.Location = new System.Drawing.Point(461, 320);
+            this.txtMobile1.Location = new System.Drawing.Point(471, 320);
+            this.txtMobile1.MaxLength = 12;
             this.txtMobile1.Name = "txtMobile1";
             this.txtMobile1.Size = new System.Drawing.Size(105, 24);
             this.txtMobile1.TabIndex = 151;
@@ -330,7 +333,7 @@
             // 
             this.lblMobile.AutoSize = true;
             this.lblMobile.Font = new System.Drawing.Font("Arial Unicode MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMobile.Location = new System.Drawing.Point(457, 297);
+            this.lblMobile.Location = new System.Drawing.Point(467, 297);
             this.lblMobile.Name = "lblMobile";
             this.lblMobile.Size = new System.Drawing.Size(56, 20);
             this.lblMobile.TabIndex = 150;
@@ -339,7 +342,7 @@
             // txtAadhaar4
             // 
             this.txtAadhaar4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAadhaar4.Location = new System.Drawing.Point(321, 406);
+            this.txtAadhaar4.Location = new System.Drawing.Point(334, 410);
             this.txtAadhaar4.Name = "txtAadhaar4";
             this.txtAadhaar4.Size = new System.Drawing.Size(131, 24);
             this.txtAadhaar4.TabIndex = 149;
@@ -347,7 +350,7 @@
             // txtAadhaar3
             // 
             this.txtAadhaar3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAadhaar3.Location = new System.Drawing.Point(322, 376);
+            this.txtAadhaar3.Location = new System.Drawing.Point(334, 380);
             this.txtAadhaar3.Name = "txtAadhaar3";
             this.txtAadhaar3.Size = new System.Drawing.Size(131, 24);
             this.txtAadhaar3.TabIndex = 148;
@@ -355,7 +358,7 @@
             // txtAadhaar2
             // 
             this.txtAadhaar2.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAadhaar2.Location = new System.Drawing.Point(322, 350);
+            this.txtAadhaar2.Location = new System.Drawing.Point(334, 350);
             this.txtAadhaar2.Name = "txtAadhaar2";
             this.txtAadhaar2.Size = new System.Drawing.Size(131, 24);
             this.txtAadhaar2.TabIndex = 147;
@@ -363,7 +366,8 @@
             // txtAadhaar1
             // 
             this.txtAadhaar1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAadhaar1.Location = new System.Drawing.Point(324, 320);
+            this.txtAadhaar1.Location = new System.Drawing.Point(334, 320);
+            this.txtAadhaar1.MaxLength = 15;
             this.txtAadhaar1.Name = "txtAadhaar1";
             this.txtAadhaar1.Size = new System.Drawing.Size(131, 24);
             this.txtAadhaar1.TabIndex = 146;
@@ -372,7 +376,7 @@
             // 
             this.lblAadhaar.AutoSize = true;
             this.lblAadhaar.Font = new System.Drawing.Font("Arial Unicode MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAadhaar.Location = new System.Drawing.Point(322, 297);
+            this.lblAadhaar.Location = new System.Drawing.Point(330, 297);
             this.lblAadhaar.Name = "lblAadhaar";
             this.lblAadhaar.Size = new System.Drawing.Size(117, 20);
             this.lblAadhaar.TabIndex = 145;
@@ -382,36 +386,36 @@
             // 
             this.drdIdProof4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdIdProof4.FormattingEnabled = true;
-            this.drdIdProof4.Location = new System.Drawing.Point(249, 407);
+            this.drdIdProof4.Location = new System.Drawing.Point(244, 411);
             this.drdIdProof4.Name = "drdIdProof4";
-            this.drdIdProof4.Size = new System.Drawing.Size(67, 24);
+            this.drdIdProof4.Size = new System.Drawing.Size(84, 24);
             this.drdIdProof4.TabIndex = 144;
             // 
             // drdIdProof3
             // 
             this.drdIdProof3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdIdProof3.FormattingEnabled = true;
-            this.drdIdProof3.Location = new System.Drawing.Point(249, 377);
+            this.drdIdProof3.Location = new System.Drawing.Point(244, 380);
             this.drdIdProof3.Name = "drdIdProof3";
-            this.drdIdProof3.Size = new System.Drawing.Size(67, 24);
+            this.drdIdProof3.Size = new System.Drawing.Size(84, 24);
             this.drdIdProof3.TabIndex = 143;
             // 
             // drdIdProof2
             // 
             this.drdIdProof2.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdIdProof2.FormattingEnabled = true;
-            this.drdIdProof2.Location = new System.Drawing.Point(249, 351);
+            this.drdIdProof2.Location = new System.Drawing.Point(244, 350);
             this.drdIdProof2.Name = "drdIdProof2";
-            this.drdIdProof2.Size = new System.Drawing.Size(67, 24);
+            this.drdIdProof2.Size = new System.Drawing.Size(84, 24);
             this.drdIdProof2.TabIndex = 142;
             // 
             // drdIdProof1
             // 
             this.drdIdProof1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdIdProof1.FormattingEnabled = true;
-            this.drdIdProof1.Location = new System.Drawing.Point(249, 321);
+            this.drdIdProof1.Location = new System.Drawing.Point(244, 320);
             this.drdIdProof1.Name = "drdIdProof1";
-            this.drdIdProof1.Size = new System.Drawing.Size(67, 24);
+            this.drdIdProof1.Size = new System.Drawing.Size(84, 24);
             this.drdIdProof1.TabIndex = 141;
             // 
             // lblIDProof
@@ -437,7 +441,7 @@
             // txtVisitorName4
             // 
             this.txtVisitorName4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVisitorName4.Location = new System.Drawing.Point(33, 406);
+            this.txtVisitorName4.Location = new System.Drawing.Point(33, 410);
             this.txtVisitorName4.Name = "txtVisitorName4";
             this.txtVisitorName4.Size = new System.Drawing.Size(131, 24);
             this.txtVisitorName4.TabIndex = 138;
@@ -445,7 +449,7 @@
             // txtVisitorName3
             // 
             this.txtVisitorName3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVisitorName3.Location = new System.Drawing.Point(34, 376);
+            this.txtVisitorName3.Location = new System.Drawing.Point(34, 381);
             this.txtVisitorName3.Name = "txtVisitorName3";
             this.txtVisitorName3.Size = new System.Drawing.Size(131, 24);
             this.txtVisitorName3.TabIndex = 137;
@@ -462,6 +466,7 @@
             // 
             this.txtVisitorName1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVisitorName1.Location = new System.Drawing.Point(34, 320);
+            this.txtVisitorName1.MaxLength = 15;
             this.txtVisitorName1.Name = "txtVisitorName1";
             this.txtVisitorName1.Size = new System.Drawing.Size(131, 24);
             this.txtVisitorName1.TabIndex = 135;
@@ -480,7 +485,7 @@
             // 
             this.drdCase4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdCase4.FormattingEnabled = true;
-            this.drdCase4.Location = new System.Drawing.Point(465, 255);
+            this.drdCase4.Location = new System.Drawing.Point(465, 259);
             this.drdCase4.Name = "drdCase4";
             this.drdCase4.Size = new System.Drawing.Size(67, 24);
             this.drdCase4.TabIndex = 131;
@@ -488,7 +493,7 @@
             // txtFatherName4
             // 
             this.txtFatherName4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFatherName4.Location = new System.Drawing.Point(171, 255);
+            this.txtFatherName4.Location = new System.Drawing.Point(171, 259);
             this.txtFatherName4.Name = "txtFatherName4";
             this.txtFatherName4.Size = new System.Drawing.Size(131, 24);
             this.txtFatherName4.TabIndex = 128;
@@ -496,7 +501,7 @@
             // txtPrisonerName4
             // 
             this.txtPrisonerName4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrisonerName4.Location = new System.Drawing.Point(33, 255);
+            this.txtPrisonerName4.Location = new System.Drawing.Point(33, 259);
             this.txtPrisonerName4.Name = "txtPrisonerName4";
             this.txtPrisonerName4.Size = new System.Drawing.Size(131, 24);
             this.txtPrisonerName4.TabIndex = 127;
@@ -505,7 +510,7 @@
             // 
             this.drdCase3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdCase3.FormattingEnabled = true;
-            this.drdCase3.Location = new System.Drawing.Point(465, 225);
+            this.drdCase3.Location = new System.Drawing.Point(465, 229);
             this.drdCase3.Name = "drdCase3";
             this.drdCase3.Size = new System.Drawing.Size(67, 24);
             this.drdCase3.TabIndex = 124;
@@ -513,7 +518,7 @@
             // txtFatherName3
             // 
             this.txtFatherName3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFatherName3.Location = new System.Drawing.Point(171, 225);
+            this.txtFatherName3.Location = new System.Drawing.Point(171, 229);
             this.txtFatherName3.Name = "txtFatherName3";
             this.txtFatherName3.Size = new System.Drawing.Size(131, 24);
             this.txtFatherName3.TabIndex = 121;
@@ -521,7 +526,7 @@
             // txtPrisonerName3
             // 
             this.txtPrisonerName3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrisonerName3.Location = new System.Drawing.Point(34, 225);
+            this.txtPrisonerName3.Location = new System.Drawing.Point(34, 229);
             this.txtPrisonerName3.Name = "txtPrisonerName3";
             this.txtPrisonerName3.Size = new System.Drawing.Size(131, 24);
             this.txtPrisonerName3.TabIndex = 120;
@@ -564,6 +569,7 @@
             // 
             this.txtFatherName1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFatherName1.Location = new System.Drawing.Point(173, 169);
+            this.txtFatherName1.MaxLength = 15;
             this.txtFatherName1.Name = "txtFatherName1";
             this.txtFatherName1.Size = new System.Drawing.Size(131, 24);
             this.txtFatherName1.TabIndex = 107;
@@ -572,6 +578,7 @@
             // 
             this.txtPrisonerName1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrisonerName1.Location = new System.Drawing.Point(34, 169);
+            this.txtPrisonerName1.MaxLength = 15;
             this.txtPrisonerName1.Name = "txtPrisonerName1";
             this.txtPrisonerName1.Size = new System.Drawing.Size(131, 24);
             this.txtPrisonerName1.TabIndex = 106;
@@ -659,7 +666,7 @@
             // 
             this.lblPrisonerName.AutoSize = true;
             this.lblPrisonerName.Font = new System.Drawing.Font("Arial Unicode MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrisonerName.Location = new System.Drawing.Point(30, 146);
+            this.lblPrisonerName.Location = new System.Drawing.Point(35, 145);
             this.lblPrisonerName.Name = "lblPrisonerName";
             this.lblPrisonerName.Size = new System.Drawing.Size(79, 20);
             this.lblPrisonerName.TabIndex = 97;
@@ -749,7 +756,7 @@
             // 
             this.drdUTCT4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdUTCT4.FormattingEnabled = true;
-            this.drdUTCT4.Location = new System.Drawing.Point(310, 255);
+            this.drdUTCT4.Location = new System.Drawing.Point(310, 259);
             this.drdUTCT4.Name = "drdUTCT4";
             this.drdUTCT4.Size = new System.Drawing.Size(67, 24);
             this.drdUTCT4.TabIndex = 177;
@@ -758,7 +765,7 @@
             // 
             this.drdUTCT3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdUTCT3.FormattingEnabled = true;
-            this.drdUTCT3.Location = new System.Drawing.Point(310, 225);
+            this.drdUTCT3.Location = new System.Drawing.Point(310, 229);
             this.drdUTCT3.Name = "drdUTCT3";
             this.drdUTCT3.Size = new System.Drawing.Size(67, 24);
             this.drdUTCT3.TabIndex = 176;
@@ -786,9 +793,9 @@
             this.drdDistrict4.DropDownWidth = 77;
             this.drdDistrict4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdDistrict4.FormattingEnabled = true;
-            this.drdDistrict4.Location = new System.Drawing.Point(649, 254);
+            this.drdDistrict4.Location = new System.Drawing.Point(649, 259);
             this.drdDistrict4.Name = "drdDistrict4";
-            this.drdDistrict4.Size = new System.Drawing.Size(67, 24);
+            this.drdDistrict4.Size = new System.Drawing.Size(104, 24);
             this.drdDistrict4.TabIndex = 181;
             // 
             // drdDistrict3
@@ -796,9 +803,9 @@
             this.drdDistrict3.DropDownWidth = 77;
             this.drdDistrict3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdDistrict3.FormattingEnabled = true;
-            this.drdDistrict3.Location = new System.Drawing.Point(649, 224);
+            this.drdDistrict3.Location = new System.Drawing.Point(649, 229);
             this.drdDistrict3.Name = "drdDistrict3";
-            this.drdDistrict3.Size = new System.Drawing.Size(67, 24);
+            this.drdDistrict3.Size = new System.Drawing.Size(104, 24);
             this.drdDistrict3.TabIndex = 180;
             // 
             // drdDistrict2
@@ -808,7 +815,7 @@
             this.drdDistrict2.FormattingEnabled = true;
             this.drdDistrict2.Location = new System.Drawing.Point(649, 198);
             this.drdDistrict2.Name = "drdDistrict2";
-            this.drdDistrict2.Size = new System.Drawing.Size(67, 24);
+            this.drdDistrict2.Size = new System.Drawing.Size(104, 24);
             this.drdDistrict2.TabIndex = 179;
             // 
             // drdDistrict1
@@ -818,7 +825,7 @@
             this.drdDistrict1.FormattingEnabled = true;
             this.drdDistrict1.Location = new System.Drawing.Point(649, 168);
             this.drdDistrict1.Name = "drdDistrict1";
-            this.drdDistrict1.Size = new System.Drawing.Size(67, 24);
+            this.drdDistrict1.Size = new System.Drawing.Size(104, 24);
             this.drdDistrict1.TabIndex = 178;
             // 
             // drdPS4
@@ -826,9 +833,9 @@
             this.drdPS4.DropDownWidth = 77;
             this.drdPS4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdPS4.FormattingEnabled = true;
-            this.drdPS4.Location = new System.Drawing.Point(538, 255);
+            this.drdPS4.Location = new System.Drawing.Point(538, 259);
             this.drdPS4.Name = "drdPS4";
-            this.drdPS4.Size = new System.Drawing.Size(87, 24);
+            this.drdPS4.Size = new System.Drawing.Size(105, 24);
             this.drdPS4.TabIndex = 185;
             // 
             // drdPS3
@@ -836,9 +843,9 @@
             this.drdPS3.DropDownWidth = 77;
             this.drdPS3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdPS3.FormattingEnabled = true;
-            this.drdPS3.Location = new System.Drawing.Point(538, 225);
+            this.drdPS3.Location = new System.Drawing.Point(538, 229);
             this.drdPS3.Name = "drdPS3";
-            this.drdPS3.Size = new System.Drawing.Size(87, 24);
+            this.drdPS3.Size = new System.Drawing.Size(105, 24);
             this.drdPS3.TabIndex = 184;
             // 
             // drdPS2
@@ -848,7 +855,7 @@
             this.drdPS2.FormattingEnabled = true;
             this.drdPS2.Location = new System.Drawing.Point(538, 199);
             this.drdPS2.Name = "drdPS2";
-            this.drdPS2.Size = new System.Drawing.Size(87, 24);
+            this.drdPS2.Size = new System.Drawing.Size(105, 24);
             this.drdPS2.TabIndex = 183;
             // 
             // drdPS1
@@ -858,14 +865,14 @@
             this.drdPS1.FormattingEnabled = true;
             this.drdPS1.Location = new System.Drawing.Point(538, 169);
             this.drdPS1.Name = "drdPS1";
-            this.drdPS1.Size = new System.Drawing.Size(87, 24);
+            this.drdPS1.Size = new System.Drawing.Size(105, 24);
             this.drdPS1.TabIndex = 182;
             // 
             // drdDOA4
             // 
             this.drdDOA4.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdDOA4.FormattingEnabled = true;
-            this.drdDOA4.Location = new System.Drawing.Point(390, 255);
+            this.drdDOA4.Location = new System.Drawing.Point(390, 259);
             this.drdDOA4.Name = "drdDOA4";
             this.drdDOA4.Size = new System.Drawing.Size(67, 24);
             this.drdDOA4.TabIndex = 189;
@@ -874,7 +881,7 @@
             // 
             this.drdDOA3.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drdDOA3.FormattingEnabled = true;
-            this.drdDOA3.Location = new System.Drawing.Point(390, 225);
+            this.drdDOA3.Location = new System.Drawing.Point(390, 229);
             this.drdDOA3.Name = "drdDOA3";
             this.drdDOA3.Size = new System.Drawing.Size(67, 24);
             this.drdDOA3.TabIndex = 188;
@@ -899,8 +906,8 @@
             // 
             // displayImageBox
             // 
-            this.displayImageBox.InitialImage = global::WindowsFormsApp1.Properties.Resources.NoImage;
-            this.displayImageBox.Location = new System.Drawing.Point(777, 131);
+            this.displayImageBox.InitialImage = global::MulakatPassUK.Properties.Resources.NoImage;
+            this.displayImageBox.Location = new System.Drawing.Point(770, 149);
             this.displayImageBox.Name = "displayImageBox";
             this.displayImageBox.Size = new System.Drawing.Size(130, 130);
             this.displayImageBox.TabIndex = 190;
@@ -998,7 +1005,7 @@
             this.Controls.Add(this.lblSubTitle);
             this.Controls.Add(this.lblTitle);
             this.Name = "GPass";
-            this.Text = "Form1";
+            this.Text = "GPass";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.displayImageBox)).EndInit();
             this.ResumeLayout(false);

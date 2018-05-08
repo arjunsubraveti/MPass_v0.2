@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace MulakatPassUK
 {
     partial class MulakatUK
     {
@@ -88,7 +88,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.UKPLOGO;
+            this.pictureBox1.Image = global::MulakatPassUK.Properties.Resources.UKPLOGO;
             this.pictureBox1.Location = new System.Drawing.Point(126, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(147, 164);

@@ -8,13 +8,14 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace MulakatPassUK
 {
     public class GpassFormHandler   
     {
         private string regExForName = @"^[a-zA-Z][a-zA-Z]+";
         private string regExForMobile = @"^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1}){0,1}98(\s){0,1}(\-){0,1}(\s){0,1}[1-9]{1}[0-9]{7}$";
         private ErrorProvider errorProvider;
+        public string errorMessage = "";
 
         public GpassFormHandler()
         {
@@ -65,11 +66,12 @@ namespace WindowsFormsApp1
 
         }
 
-        public bool IsEmptyTextBox(TextBox textBox)
+        public bool IsEmptyTextBox(TextBox textBox, Label label)
         {
             if (string.IsNullOrEmpty(textBox.Text))
             {
                 textBox.BackColor = Color.Pink;
+                errorMessage += label.Text + " is empty. Please fill it\n";
                 return true;
             }
             else
@@ -79,12 +81,14 @@ namespace WindowsFormsApp1
             }
         }
 
-        public bool IsEmptyComboBox(ComboBox comboBox)
+        public bool IsEmptyComboBox(ComboBox comboBox, Label label)
         {
             if (string.IsNullOrEmpty(comboBox.Text))
             {
                 comboBox.BackColor = Color.Pink;
+                errorMessage += label.Text + " is empty. Please fill it\n";
                 return true;
+                
             }
             else
             {
@@ -145,8 +149,9 @@ namespace WindowsFormsApp1
                 }
             }
 
+
     
-        public void TextBoxValidationForNames(TextBox textBox)
+        public void TextBoxValidationForNames(TextBox textBox, Label label)
         {   
             
             if ( !string.IsNullOrEmpty(textBox.Text))
@@ -156,6 +161,7 @@ namespace WindowsFormsApp1
                 if (!Regex.IsMatch(textBox.Text, regExForName))
                     {
                     textBox.BackColor = Color.Pink;
+                    errorMessage += label.Text + " is invalid. Please correct it\n";
                 }
                 //errorProvider.SetError(textBox, "Alphabets and spaces are only allowed");
                
@@ -169,13 +175,14 @@ namespace WindowsFormsApp1
         }
 
 
-        public void TextBoxValidationForMobile(TextBox textBox)
+        public void TextBoxValidationForMobile(TextBox textBox, Label label)
         {
 
             if ( !string.IsNullOrEmpty(textBox.Text) && !Regex.IsMatch(textBox.Text, regExForMobile))
             {
                 //errorProvider.SetError(textBox, "Alphabets and spaces are only allowed");
                 textBox.BackColor = Color.Pink;
+                errorMessage += label.Text + " contains invalid mobile number. Please correct it\n";
 
             }
             else

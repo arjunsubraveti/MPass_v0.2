@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace WindowsFormsApp1
+namespace MulakatPassUK
 {
-    public partial class GPass : Form 
+    public partial class GPass : Form
     {
         private GpassEntity objGPass;
         private IGpassDB objIGpassDB;
@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
         public GPass()
         {
             InitializeComponent();
-            
+
             objIGpassDB = CreateNewIGpassDBEntity();
             objGpassFormHandler = CreateNewGpassFormHandler();
 
@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             objGpassFormHandler.PopulateComboBox("UTCT.txt", drdUTCT3);
             objGpassFormHandler.PopulateComboBox("UTCT.txt", drdUTCT4);
 
-            
+
         }
 
         private void LoadFormElements()
@@ -117,41 +117,44 @@ namespace WindowsFormsApp1
 
             CaptureFormText();
 
-            
-            if (objGpassFormHandler.IsEmptyTextBox(txtPrisonerName1) ||
-            objGpassFormHandler.IsEmptyTextBox(txtVisitorName1) ||
-            objGpassFormHandler.IsEmptyComboBox(drdPurpose))
+
+            if (objGpassFormHandler.IsEmptyTextBox(txtPrisonerName1, lblPrisonerName) ||
+            objGpassFormHandler.IsEmptyTextBox(txtVisitorName1, lblVisitorName) ||
+            objGpassFormHandler.IsEmptyComboBox(drdPurpose, lblPurpose) ||
+            objGpassFormHandler.IsEmptyTextBox(txtMobile1, lblMobile) ||
+            objGpassFormHandler.IsEmptyComboBox(drdIdProof1, lblIDProof) ||
+            objGpassFormHandler.IsEmptyTextBox(txtAadhaar1, lblAadhaar))
             {
-                MessageBox.Show("Please fill the mandatory fields");
+                MessageBox.Show(objGpassFormHandler.errorMessage);
             }
             else if(!objGpassFormHandler.CheckIfImageCaptured(displayImageBox))
             {
-                MessageBox.Show("Photo hasn't been captured");
+                MessageBox.Show("Take visitor's photo");
             }
             else
 
             {
                 objGpassFormHandler.ValidateAllComboBoxes(this);
          
-                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName1);
-                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName2);
-                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName3);
-                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName4);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName1, lblPrisonerName);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName2, lblPrisonerName);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName3, lblPrisonerName);
+                objGpassFormHandler.TextBoxValidationForNames(txtPrisonerName4, lblPrisonerName);
 
-                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName1);
-                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName2);
-                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName3);
-                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName4);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName1, lblVisitorName);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName2, lblVisitorName);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName3, lblVisitorName);
+                objGpassFormHandler.TextBoxValidationForNames(txtVisitorName4, lblVisitorName);
 
-                objGpassFormHandler.TextBoxValidationForNames(txtFatherName1);
-                objGpassFormHandler.TextBoxValidationForNames(txtFatherName2);
-                objGpassFormHandler.TextBoxValidationForNames(txtFatherName3);
-                objGpassFormHandler.TextBoxValidationForNames(txtFatherName4);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName1, lblFatherName);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName2, lblFatherName);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName3, lblFatherName);
+                objGpassFormHandler.TextBoxValidationForNames(txtFatherName4, lblFatherName);
 
-                objGpassFormHandler.TextBoxValidationForMobile(txtMobile1);
-                objGpassFormHandler.TextBoxValidationForMobile(txtMobile2);
-                objGpassFormHandler.TextBoxValidationForMobile(txtMobile3);
-                objGpassFormHandler.TextBoxValidationForMobile(txtMobile4);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile1, lblMobile);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile2, lblMobile);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile3, lblMobile);
+                objGpassFormHandler.TextBoxValidationForMobile(txtMobile4, lblMobile);
 
               
 
@@ -167,10 +170,14 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    MessageBox.Show("Insert Failed!");
+                    MessageBox.Show("\n"+objGpassFormHandler.errorMessage);
                 }
 
             }
+
+            objGpassFormHandler.errorMessage = "";
+
+
  
         }
 
@@ -272,19 +279,21 @@ namespace WindowsFormsApp1
             //Call Print methods
             //Disable Print
             //Show messagebox that data has been printed
-            mps = new MulakatPrintScreen();
-            mps.LoadPrintData(this);
-            mps.Show();
-            
-            
-            //if(mps.FinishedPrinting)
-            //{
-            //    btnPrint.Enabled = false;
-            //}
-            //else
-            //{
-            //    btnPrint.Enabled = true;
-            //}
+            if( (objGPass != null) && objGPass.IsInsertFinished)
+            {
+                mps = new MulakatPrintScreen();
+                mps.LoadPrintData(this);
+                mps.Show();
+            }
+            else
+            {
+                btnSave_Click(null, null);
+                if ((objGPass != null) && objGPass.IsInsertFinished)
+                {
+                    btnPrint_Click(null, null);
+                }
+                    
+            }
             
         }
 
@@ -315,6 +324,8 @@ namespace WindowsFormsApp1
         {
 
             //displayImageBox.Image = Image.FromFile(passImage.tempFilePath);
+            passImage.tempFilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + "tmpImg.jpg";
+            passImage.frame.Save(passImage.tempFilePath);
             Image img = new Bitmap(passImage.tempFilePath);
             displayImageBox.Image = img.GetThumbnailImage(130, 130, new Image.GetThumbnailImageAbort(CallbackFun), new IntPtr());
             
