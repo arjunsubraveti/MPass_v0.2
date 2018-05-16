@@ -73,6 +73,16 @@ namespace MulakatPassUK.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap UKMPasslogo {
+            get {
+                object obj = ResourceManager.GetObject("UKMPasslogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UKPLOGO {
             get {
                 object obj = ResourceManager.GetObject("UKPLOGO", resourceCulture);

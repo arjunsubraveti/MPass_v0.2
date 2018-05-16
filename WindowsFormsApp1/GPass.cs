@@ -162,7 +162,7 @@ namespace MulakatPassUK
 
                 if (!(objGPass.IsIncorrectData) && SendToDB() > 0)
                 {
-                    MessageBox.Show("Insert Successful!");
+                    MessageBox.Show("Record has been inserted successfully!");
                     objGPass.IsInsertFinished = true;
                     objGpassFormHandler.DisableBoxes(this);
                     btnSave.Enabled = false;
@@ -170,7 +170,7 @@ namespace MulakatPassUK
                 }
                 else
                 {
-                    MessageBox.Show("\n"+objGpassFormHandler.errorMessage);
+                    MessageBox.Show("Insert failed due to some errors\n"+objGpassFormHandler.errorMessage);
                 }
 
             }
@@ -283,7 +283,10 @@ namespace MulakatPassUK
             {
                 mps = new MulakatPrintScreen();
                 mps.LoadPrintData(this);
-                mps.Show();
+               if(mps.FinishedPrinting)
+                {
+                    btnClear_Click(null, null);
+                }
             }
             else
             {
@@ -314,6 +317,7 @@ namespace MulakatPassUK
 
         private void btnPhotoCapture_Click(object sender, EventArgs e)
         {
+            btnPhotoCapture.Enabled = false;
             passImage = new PassImageForm();
             passImage.Show();
             passImage.FormClosed += new FormClosedEventHandler(passImage_Closed);
@@ -324,6 +328,7 @@ namespace MulakatPassUK
         {
 
             //displayImageBox.Image = Image.FromFile(passImage.tempFilePath);
+            btnPhotoCapture.Enabled = true;
             passImage.tempFilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + "tmpImg.jpg";
             passImage.frame.Save(passImage.tempFilePath);
             Image img = new Bitmap(passImage.tempFilePath);

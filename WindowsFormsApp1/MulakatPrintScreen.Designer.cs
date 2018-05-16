@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MulakatPrintScreen));
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lblSplPermission = new System.Windows.Forms.Label();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.lblInstruction = new System.Windows.Forms.Label();
+            this.lblSuperintendentE = new System.Windows.Forms.Label();
+            this.lblDptySuperintendentE = new System.Windows.Forms.Label();
+            this.lblJailorE = new System.Windows.Forms.Label();
+            this.lblDptyJailorE = new System.Windows.Forms.Label();
+            this.lblSuperintendentH = new System.Windows.Forms.Label();
+            this.lblDptySuperintendentH = new System.Windows.Forms.Label();
+            this.lblJailorH = new System.Windows.Forms.Label();
+            this.lblDptyJailorH = new System.Windows.Forms.Label();
+            this.lblPermission = new System.Windows.Forms.Label();
             this.lblMoney = new System.Windows.Forms.Label();
             this.lblArticles = new System.Windows.Forms.Label();
             this.lblPurpose = new System.Windows.Forms.Label();
@@ -57,16 +57,15 @@
             this.lblFatherName = new System.Windows.Forms.Label();
             this.lblPrisonerName = new System.Windows.Forms.Label();
             this.valPassPic = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.lblMTime = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblSNo = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle2 = new System.Windows.Forms.Label();
+            this.lblSubTitle2 = new System.Windows.Forms.Label();
+            this.mpassLogo = new System.Windows.Forms.PictureBox();
+            this.lblSubTitle1 = new System.Windows.Forms.Label();
+            this.lblTitle1 = new System.Windows.Forms.Label();
             this.valSNo = new System.Windows.Forms.Label();
             this.valDate = new System.Windows.Forms.Label();
             this.valTime = new System.Windows.Forms.Label();
@@ -128,391 +127,389 @@
             this.valAadhaar1 = new System.Windows.Forms.Label();
             this.lblAadhaar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLineRight = new System.Windows.Forms.Label();
+            this.lblLineLeft = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.valPassPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mpassLogo)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label36
+            // lblSplPermission
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(210, 610);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(126, 20);
-            this.label36.TabIndex = 76;
-            this.label36.Text = "विशेष अनुमति / अस्वीकृत";
+            this.lblSplPermission.AutoSize = true;
+            this.lblSplPermission.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSplPermission.Location = new System.Drawing.Point(218, 449);
+            this.lblSplPermission.Name = "lblSplPermission";
+            this.lblSplPermission.Size = new System.Drawing.Size(119, 16);
+            this.lblSplPermission.TabIndex = 76;
+            this.lblSplPermission.Text = "विशेष अनुमति / अस्वीकृत";
             // 
-            // label35
+            // lblCount
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(109, 610);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(95, 15);
-            this.label35.TabIndex = 75;
-            this.label35.Text = "1st     /2nd\t /3rd / ";
+            this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("Arial Unicode MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCount.Location = new System.Drawing.Point(117, 449);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(60, 11);
+            this.lblCount.TabIndex = 75;
+            this.lblCount.Text = "1st     /2nd\t /3rd / ";
             // 
-            // label34
+            // lblInstruction
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(52, 708);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(240, 13);
-            this.label34.TabIndex = 74;
-            this.label34.Text = "पास हस्तांतरणीय नहीं है – बाहर जानेके समय पास लौटें";
+            this.lblInstruction.AutoSize = true;
+            this.lblInstruction.Location = new System.Drawing.Point(187, 533);
+            this.lblInstruction.Name = "lblInstruction";
+            this.lblInstruction.Size = new System.Drawing.Size(240, 13);
+            this.lblInstruction.TabIndex = 74;
+            this.lblInstruction.Text = "पास हस्तांतरणीय नहीं है – बाहर जानेके समय पास लौटें";
             // 
-            // label33
+            // lblSuperintendentE
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(545, 674);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(91, 15);
-            this.label33.TabIndex = 73;
-            this.label33.Text = "Superintendent";
+            this.lblSuperintendentE.AutoSize = true;
+            this.lblSuperintendentE.Font = new System.Drawing.Font("Arial Unicode MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuperintendentE.Location = new System.Drawing.Point(508, 498);
+            this.lblSuperintendentE.Name = "lblSuperintendentE";
+            this.lblSuperintendentE.Size = new System.Drawing.Size(55, 11);
+            this.lblSuperintendentE.TabIndex = 73;
+            this.lblSuperintendentE.Text = "Superintendent";
             // 
-            // label32
+            // lblDptySuperintendentE
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(345, 674);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(130, 15);
-            this.label32.TabIndex = 72;
-            this.label32.Text = "Deputy superintendent";
+            this.lblDptySuperintendentE.AutoSize = true;
+            this.lblDptySuperintendentE.Font = new System.Drawing.Font("Arial Unicode MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDptySuperintendentE.Location = new System.Drawing.Point(350, 498);
+            this.lblDptySuperintendentE.Name = "lblDptySuperintendentE";
+            this.lblDptySuperintendentE.Size = new System.Drawing.Size(80, 11);
+            this.lblDptySuperintendentE.TabIndex = 72;
+            this.lblDptySuperintendentE.Text = "Deputy superintendent";
             // 
-            // label31
+            // lblJailorE
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(210, 674);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(37, 15);
-            this.label31.TabIndex = 71;
-            this.label31.Text = "Jailor";
+            this.lblJailorE.AutoSize = true;
+            this.lblJailorE.Font = new System.Drawing.Font("Arial Unicode MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJailorE.Location = new System.Drawing.Point(215, 498);
+            this.lblJailorE.Name = "lblJailorE";
+            this.lblJailorE.Size = new System.Drawing.Size(24, 11);
+            this.lblJailorE.TabIndex = 71;
+            this.lblJailorE.Text = "Jailor";
             // 
-            // label30
+            // lblDptyJailorE
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(52, 674);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(75, 15);
-            this.label30.TabIndex = 70;
-            this.label30.Text = "Deputy jailor";
+            this.lblDptyJailorE.AutoSize = true;
+            this.lblDptyJailorE.Font = new System.Drawing.Font("Arial Unicode MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDptyJailorE.Location = new System.Drawing.Point(61, 498);
+            this.lblDptyJailorE.Name = "lblDptyJailorE";
+            this.lblDptyJailorE.Size = new System.Drawing.Size(48, 11);
+            this.lblDptyJailorE.TabIndex = 70;
+            this.lblDptyJailorE.Text = "Deputy jailor";
             // 
-            // label29
+            // lblSuperintendentH
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(545, 656);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(49, 20);
-            this.label29.TabIndex = 69;
-            this.label29.Text = "अधीक्षक";
+            this.lblSuperintendentH.AutoSize = true;
+            this.lblSuperintendentH.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuperintendentH.Location = new System.Drawing.Point(508, 480);
+            this.lblSuperintendentH.Name = "lblSuperintendentH";
+            this.lblSuperintendentH.Size = new System.Drawing.Size(44, 16);
+            this.lblSuperintendentH.TabIndex = 69;
+            this.lblSuperintendentH.Text = "अधीक्षक";
             // 
-            // label28
+            // lblDptySuperintendentH
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(345, 656);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(67, 20);
-            this.label28.TabIndex = 68;
-            this.label28.Text = "उप अधीक्षक";
+            this.lblDptySuperintendentH.AutoSize = true;
+            this.lblDptySuperintendentH.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDptySuperintendentH.Location = new System.Drawing.Point(350, 480);
+            this.lblDptySuperintendentH.Name = "lblDptySuperintendentH";
+            this.lblDptySuperintendentH.Size = new System.Drawing.Size(61, 16);
+            this.lblDptySuperintendentH.TabIndex = 68;
+            this.lblDptySuperintendentH.Text = "उप अधीक्षक";
             // 
-            // label27
+            // lblJailorH
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(210, 656);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(33, 20);
-            this.label27.TabIndex = 67;
-            this.label27.Text = "जेलर";
+            this.lblJailorH.AutoSize = true;
+            this.lblJailorH.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJailorH.Location = new System.Drawing.Point(215, 480);
+            this.lblJailorH.Name = "lblJailorH";
+            this.lblJailorH.Size = new System.Drawing.Size(30, 16);
+            this.lblJailorH.TabIndex = 67;
+            this.lblJailorH.Text = "जेलर";
             // 
-            // label26
+            // lblDptyJailorH
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(52, 656);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 20);
-            this.label26.TabIndex = 66;
-            this.label26.Text = "डिप्टी जेलर";
+            this.lblDptyJailorH.AutoSize = true;
+            this.lblDptyJailorH.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDptyJailorH.Location = new System.Drawing.Point(57, 480);
+            this.lblDptyJailorH.Name = "lblDptyJailorH";
+            this.lblDptyJailorH.Size = new System.Drawing.Size(58, 16);
+            this.lblDptyJailorH.TabIndex = 66;
+            this.lblDptyJailorH.Text = "डिप्टी जेलर";
             // 
-            // label25
+            // lblPermission
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(52, 607);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(44, 20);
-            this.label25.TabIndex = 65;
-            this.label25.Text = "अनुमति";
+            this.lblPermission.AutoSize = true;
+            this.lblPermission.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPermission.Location = new System.Drawing.Point(60, 446);
+            this.lblPermission.Name = "lblPermission";
+            this.lblPermission.Size = new System.Drawing.Size(42, 16);
+            this.lblPermission.TabIndex = 65;
+            this.lblPermission.Text = "अनुमति";
             // 
             // lblMoney
             // 
             this.lblMoney.AutoSize = true;
-            this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.Location = new System.Drawing.Point(638, 567);
+            this.lblMoney.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.Location = new System.Drawing.Point(370, 407);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(61, 20);
+            this.lblMoney.Size = new System.Drawing.Size(57, 15);
             this.lblMoney.TabIndex = 64;
             this.lblMoney.Text = "धन जमा ? :";
             // 
             // lblArticles
             // 
             this.lblArticles.AutoSize = true;
-            this.lblArticles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticles.Location = new System.Drawing.Point(352, 567);
+            this.lblArticles.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArticles.Location = new System.Drawing.Point(226, 405);
             this.lblArticles.Name = "lblArticles";
-            this.lblArticles.Size = new System.Drawing.Size(74, 20);
+            this.lblArticles.Size = new System.Drawing.Size(68, 15);
             this.lblArticles.TabIndex = 63;
             this.lblArticles.Text = "सामग्री प्रस्तुत :";
             // 
             // lblPurpose
             // 
             this.lblPurpose.AutoSize = true;
-            this.lblPurpose.Location = new System.Drawing.Point(67, 568);
+            this.lblPurpose.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurpose.Location = new System.Drawing.Point(60, 404);
             this.lblPurpose.Name = "lblPurpose";
-            this.lblPurpose.Size = new System.Drawing.Size(98, 13);
+            this.lblPurpose.Size = new System.Drawing.Size(90, 15);
             this.lblPurpose.TabIndex = 62;
             this.lblPurpose.Text = "मुलाकात का उद्देश्य :";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(529, 435);
+            this.lblAddress.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(374, 322);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(71, 20);
+            this.lblAddress.Size = new System.Drawing.Size(61, 15);
             this.lblAddress.TabIndex = 61;
             this.lblAddress.Text = "दर्शक का पता";
             // 
             // lblIDProof
             // 
             this.lblIDProof.AutoSize = true;
-            this.lblIDProof.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDProof.Location = new System.Drawing.Point(258, 435);
+            this.lblIDProof.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIDProof.Location = new System.Drawing.Point(187, 322);
             this.lblIDProof.Name = "lblIDProof";
-            this.lblIDProof.Size = new System.Drawing.Size(41, 20);
+            this.lblIDProof.Size = new System.Drawing.Size(33, 15);
             this.lblIDProof.TabIndex = 60;
             this.lblIDProof.Text = "आईडी";
             // 
             // lblMobile
             // 
             this.lblMobile.AutoSize = true;
-            this.lblMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMobile.Location = new System.Drawing.Point(442, 435);
+            this.lblMobile.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMobile.Location = new System.Drawing.Point(313, 322);
             this.lblMobile.Name = "lblMobile";
-            this.lblMobile.Size = new System.Drawing.Size(46, 20);
+            this.lblMobile.Size = new System.Drawing.Size(42, 15);
             this.lblMobile.TabIndex = 59;
             this.lblMobile.Text = "मोबाइल";
+            this.lblMobile.Click += new System.EventHandler(this.lblMobile_Click);
             // 
             // lblRelation
             // 
             this.lblRelation.AutoSize = true;
-            this.lblRelation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRelation.Location = new System.Drawing.Point(168, 435);
+            this.lblRelation.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRelation.Location = new System.Drawing.Point(124, 322);
             this.lblRelation.Name = "lblRelation";
-            this.lblRelation.Size = new System.Drawing.Size(33, 20);
+            this.lblRelation.Size = new System.Drawing.Size(28, 15);
             this.lblRelation.TabIndex = 58;
             this.lblRelation.Text = "संबंध";
             // 
             // lblVisitorName
             // 
             this.lblVisitorName.AutoSize = true;
-            this.lblVisitorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVisitorName.Location = new System.Drawing.Point(61, 435);
+            this.lblVisitorName.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisitorName.Location = new System.Drawing.Point(60, 322);
             this.lblVisitorName.Name = "lblVisitorName";
-            this.lblVisitorName.Size = new System.Drawing.Size(72, 20);
+            this.lblVisitorName.Size = new System.Drawing.Size(62, 15);
             this.lblVisitorName.TabIndex = 57;
             this.lblVisitorName.Text = "दर्शक का नाम";
             // 
             // lblDistrict
             // 
             this.lblDistrict.AutoSize = true;
-            this.lblDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistrict.Location = new System.Drawing.Point(610, 293);
+            this.lblDistrict.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDistrict.Location = new System.Drawing.Point(445, 238);
             this.lblDistrict.Name = "lblDistrict";
-            this.lblDistrict.Size = new System.Drawing.Size(33, 20);
+            this.lblDistrict.Size = new System.Drawing.Size(30, 15);
             this.lblDistrict.TabIndex = 56;
             this.lblDistrict.Text = "जिला";
             // 
             // lblPS
             // 
             this.lblPS.AutoSize = true;
-            this.lblPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPS.Location = new System.Drawing.Point(511, 294);
+            this.lblPS.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPS.Location = new System.Drawing.Point(374, 238);
             this.lblPS.Name = "lblPS";
-            this.lblPS.Size = new System.Drawing.Size(68, 20);
+            this.lblPS.Size = new System.Drawing.Size(59, 15);
             this.lblPS.TabIndex = 55;
             this.lblPS.Text = "पुलिस स्टेशन";
+            this.lblPS.Click += new System.EventHandler(this.lblPS_Click);
             // 
             // lblCase
             // 
             this.lblCase.AutoSize = true;
-            this.lblCase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCase.Location = new System.Drawing.Point(431, 293);
+            this.lblCase.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCase.Location = new System.Drawing.Point(313, 238);
             this.lblCase.Name = "lblCase";
-            this.lblCase.Size = new System.Drawing.Size(63, 20);
+            this.lblCase.Size = new System.Drawing.Size(55, 15);
             this.lblCase.TabIndex = 54;
             this.lblCase.Text = "केस विवरण";
             // 
             // lblDOA
             // 
             this.lblDOA.AutoSize = true;
-            this.lblDOA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOA.Location = new System.Drawing.Point(344, 293);
+            this.lblDOA.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDOA.Location = new System.Drawing.Point(255, 238);
             this.lblDOA.Name = "lblDOA";
-            this.lblDOA.Size = new System.Drawing.Size(56, 20);
+            this.lblDOA.Size = new System.Drawing.Size(52, 15);
             this.lblDOA.TabIndex = 53;
             this.lblDOA.Text = "प्रवेश तिथि";
             // 
             // lblUTxCT
             // 
             this.lblUTxCT.AutoSize = true;
-            this.lblUTxCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUTxCT.Location = new System.Drawing.Point(259, 293);
+            this.lblUTxCT.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUTxCT.Location = new System.Drawing.Point(191, 238);
             this.lblUTxCT.Name = "lblUTxCT";
-            this.lblUTxCT.Size = new System.Drawing.Size(61, 15);
+            this.lblUTxCT.Size = new System.Drawing.Size(58, 15);
             this.lblUTxCT.TabIndex = 52;
             this.lblUTxCT.Text = "अपराधी वर्ग";
             // 
             // lblFatherName
             // 
             this.lblFatherName.AutoSize = true;
-            this.lblFatherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFatherName.Location = new System.Drawing.Point(168, 290);
+            this.lblFatherName.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFatherName.Location = new System.Drawing.Point(124, 238);
             this.lblFatherName.Name = "lblFatherName";
-            this.lblFatherName.Size = new System.Drawing.Size(66, 20);
+            this.lblFatherName.Size = new System.Drawing.Size(61, 15);
             this.lblFatherName.TabIndex = 51;
             this.lblFatherName.Text = "पिता का नाम";
             // 
             // lblPrisonerName
             // 
             this.lblPrisonerName.AutoSize = true;
-            this.lblPrisonerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrisonerName.Location = new System.Drawing.Point(65, 290);
+            this.lblPrisonerName.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrisonerName.Location = new System.Drawing.Point(60, 238);
             this.lblPrisonerName.Name = "lblPrisonerName";
-            this.lblPrisonerName.Size = new System.Drawing.Size(72, 18);
+            this.lblPrisonerName.Size = new System.Drawing.Size(58, 15);
             this.lblPrisonerName.TabIndex = 50;
             this.lblPrisonerName.Text = "कैदी का नाम";
             // 
             // valPassPic
             // 
-            this.valPassPic.Location = new System.Drawing.Point(355, 134);
+            this.valPassPic.Location = new System.Drawing.Point(221, 98);
             this.valPassPic.Name = "valPassPic";
-            this.valPassPic.Size = new System.Drawing.Size(130, 130);
+            this.valPassPic.Size = new System.Drawing.Size(120, 120);
             this.valPassPic.TabIndex = 49;
             this.valPassPic.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(45, 108);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(700, 13);
-            this.label10.TabIndex = 48;
-            this.label10.Text = resources.GetString("label10.Text");
             // 
             // lblMTime
             // 
             this.lblMTime.AutoSize = true;
-            this.lblMTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMTime.Location = new System.Drawing.Point(607, 88);
+            this.lblMTime.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMTime.Location = new System.Drawing.Point(376, 166);
             this.lblMTime.Name = "lblMTime";
-            this.lblMTime.Size = new System.Drawing.Size(82, 20);
+            this.lblMTime.Size = new System.Drawing.Size(72, 15);
             this.lblMTime.TabIndex = 47;
             this.lblMTime.Text = "मुलाकात समय :";
             // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(304, 88);
+            this.lblTime.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(374, 126);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(42, 20);
+            this.lblTime.Size = new System.Drawing.Size(37, 15);
             this.lblTime.TabIndex = 46;
             this.lblTime.Text = "समय  :";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(180, 88);
+            this.lblDate.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(82, 167);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(45, 20);
+            this.lblDate.Size = new System.Drawing.Size(40, 15);
             this.lblDate.TabIndex = 45;
             this.lblDate.Text = "दिनांक :";
             // 
             // lblSNo
             // 
             this.lblSNo.AutoSize = true;
-            this.lblSNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSNo.Location = new System.Drawing.Point(61, 88);
+            this.lblSNo.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSNo.Location = new System.Drawing.Point(82, 125);
             this.lblSNo.Name = "lblSNo";
-            this.lblSNo.Size = new System.Drawing.Size(46, 20);
+            this.lblSNo.Size = new System.Drawing.Size(38, 15);
             this.lblSNo.TabIndex = 44;
             this.lblSNo.Text = "क्रमांक :";
+            this.lblSNo.Click += new System.EventHandler(this.lblSNo_Click);
             // 
-            // label4
+            // lblTitle2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(464, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(264, 20);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Uttarakhand Prison Department";
+            this.lblTitle2.AutoSize = true;
+            this.lblTitle2.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle2.Location = new System.Drawing.Point(330, 34);
+            this.lblTitle2.Name = "lblTitle2";
+            this.lblTitle2.Size = new System.Drawing.Size(219, 18);
+            this.lblTitle2.TabIndex = 43;
+            this.lblTitle2.Text = "Uttarakhand Prison Department";
             // 
-            // label3
+            // lblSubTitle2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(464, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 24);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "जिला जेल देहरादून ";
+            this.lblSubTitle2.AutoSize = true;
+            this.lblSubTitle2.Font = new System.Drawing.Font("Arial Unicode MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubTitle2.Location = new System.Drawing.Point(329, 52);
+            this.lblSubTitle2.Name = "lblSubTitle2";
+            this.lblSubTitle2.Size = new System.Drawing.Size(116, 20);
+            this.lblSubTitle2.TabIndex = 42;
+            this.lblSubTitle2.Text = "जिला जेल देहरादून ";
             // 
-            // pictureBox1
+            // mpassLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(394, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 68);
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
+            this.mpassLogo.Image = ((System.Drawing.Image)(resources.GetObject("mpassLogo.Image")));
+            this.mpassLogo.Location = new System.Drawing.Point(250, 24);
+            this.mpassLogo.Name = "mpassLogo";
+            this.mpassLogo.Size = new System.Drawing.Size(63, 68);
+            this.mpassLogo.TabIndex = 41;
+            this.mpassLogo.TabStop = false;
             // 
-            // label2
+            // lblSubTitle1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(250, 52);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 24);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "मुलाकात प्रवेश पास ";
+            this.lblSubTitle1.AutoSize = true;
+            this.lblSubTitle1.Font = new System.Drawing.Font("Arial Unicode MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubTitle1.Location = new System.Drawing.Point(112, 52);
+            this.lblSubTitle1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSubTitle1.Name = "lblSubTitle1";
+            this.lblSubTitle1.Size = new System.Drawing.Size(120, 20);
+            this.lblSubTitle1.TabIndex = 40;
+            this.lblSubTitle1.Text = "मुलाकात प्रवेश पास ";
             // 
-            // label1
+            // lblTitle1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 29);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "उत्तराखण्ड कारागार विभाग";
+            this.lblTitle1.AutoSize = true;
+            this.lblTitle1.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle1.Location = new System.Drawing.Point(52, 34);
+            this.lblTitle1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle1.Name = "lblTitle1";
+            this.lblTitle1.Size = new System.Drawing.Size(190, 21);
+            this.lblTitle1.TabIndex = 39;
+            this.lblTitle1.Text = "उत्तराखण्ड कारागार विभाग";
+            this.lblTitle1.Click += new System.EventHandler(this.lblTitle1_Click);
             // 
             // valSNo
             // 
             this.valSNo.AutoSize = true;
-            this.valSNo.Location = new System.Drawing.Point(113, 93);
+            this.valSNo.Location = new System.Drawing.Point(126, 127);
             this.valSNo.Name = "valSNo";
             this.valSNo.Size = new System.Drawing.Size(57, 13);
             this.valSNo.TabIndex = 77;
@@ -521,7 +518,7 @@
             // valDate
             // 
             this.valDate.AutoSize = true;
-            this.valDate.Location = new System.Drawing.Point(231, 93);
+            this.valDate.Location = new System.Drawing.Point(119, 168);
             this.valDate.Name = "valDate";
             this.valDate.Size = new System.Drawing.Size(53, 13);
             this.valDate.TabIndex = 78;
@@ -530,7 +527,7 @@
             // valTime
             // 
             this.valTime.AutoSize = true;
-            this.valTime.Location = new System.Drawing.Point(352, 93);
+            this.valTime.Location = new System.Drawing.Point(417, 127);
             this.valTime.Name = "valTime";
             this.valTime.Size = new System.Drawing.Size(53, 13);
             this.valTime.TabIndex = 79;
@@ -547,7 +544,7 @@
             // valPrisonerName1
             // 
             this.valPrisonerName1.AutoSize = true;
-            this.valPrisonerName1.Location = new System.Drawing.Point(67, 317);
+            this.valPrisonerName1.Location = new System.Drawing.Point(60, 251);
             this.valPrisonerName1.Name = "valPrisonerName1";
             this.valPrisonerName1.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName1.TabIndex = 81;
@@ -556,7 +553,7 @@
             // valPrisonerName2
             // 
             this.valPrisonerName2.AutoSize = true;
-            this.valPrisonerName2.Location = new System.Drawing.Point(67, 340);
+            this.valPrisonerName2.Location = new System.Drawing.Point(60, 264);
             this.valPrisonerName2.Name = "valPrisonerName2";
             this.valPrisonerName2.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName2.TabIndex = 82;
@@ -565,7 +562,7 @@
             // valPrisonerName3
             // 
             this.valPrisonerName3.AutoSize = true;
-            this.valPrisonerName3.Location = new System.Drawing.Point(67, 362);
+            this.valPrisonerName3.Location = new System.Drawing.Point(60, 277);
             this.valPrisonerName3.Name = "valPrisonerName3";
             this.valPrisonerName3.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName3.TabIndex = 83;
@@ -574,7 +571,7 @@
             // valPrisonerName4
             // 
             this.valPrisonerName4.AutoSize = true;
-            this.valPrisonerName4.Location = new System.Drawing.Point(67, 384);
+            this.valPrisonerName4.Location = new System.Drawing.Point(60, 290);
             this.valPrisonerName4.Name = "valPrisonerName4";
             this.valPrisonerName4.Size = new System.Drawing.Size(57, 13);
             this.valPrisonerName4.TabIndex = 84;
@@ -583,7 +580,7 @@
             // valFatherName4
             // 
             this.valFatherName4.AutoSize = true;
-            this.valFatherName4.Location = new System.Drawing.Point(168, 384);
+            this.valFatherName4.Location = new System.Drawing.Point(124, 292);
             this.valFatherName4.Name = "valFatherName4";
             this.valFatherName4.Size = new System.Drawing.Size(57, 13);
             this.valFatherName4.TabIndex = 88;
@@ -592,7 +589,7 @@
             // valFatherName3
             // 
             this.valFatherName3.AutoSize = true;
-            this.valFatherName3.Location = new System.Drawing.Point(168, 362);
+            this.valFatherName3.Location = new System.Drawing.Point(124, 279);
             this.valFatherName3.Name = "valFatherName3";
             this.valFatherName3.Size = new System.Drawing.Size(57, 13);
             this.valFatherName3.TabIndex = 87;
@@ -601,7 +598,7 @@
             // valFatherName2
             // 
             this.valFatherName2.AutoSize = true;
-            this.valFatherName2.Location = new System.Drawing.Point(168, 340);
+            this.valFatherName2.Location = new System.Drawing.Point(124, 266);
             this.valFatherName2.Name = "valFatherName2";
             this.valFatherName2.Size = new System.Drawing.Size(57, 13);
             this.valFatherName2.TabIndex = 86;
@@ -610,7 +607,7 @@
             // valFatherName1
             // 
             this.valFatherName1.AutoSize = true;
-            this.valFatherName1.Location = new System.Drawing.Point(168, 317);
+            this.valFatherName1.Location = new System.Drawing.Point(124, 253);
             this.valFatherName1.Name = "valFatherName1";
             this.valFatherName1.Size = new System.Drawing.Size(57, 13);
             this.valFatherName1.TabIndex = 85;
@@ -619,7 +616,7 @@
             // valUTxCT4
             // 
             this.valUTxCT4.AutoSize = true;
-            this.valUTxCT4.Location = new System.Drawing.Point(259, 384);
+            this.valUTxCT4.Location = new System.Drawing.Point(192, 292);
             this.valUTxCT4.Name = "valUTxCT4";
             this.valUTxCT4.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT4.TabIndex = 92;
@@ -628,7 +625,7 @@
             // valUTxCT3
             // 
             this.valUTxCT3.AutoSize = true;
-            this.valUTxCT3.Location = new System.Drawing.Point(259, 362);
+            this.valUTxCT3.Location = new System.Drawing.Point(192, 279);
             this.valUTxCT3.Name = "valUTxCT3";
             this.valUTxCT3.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT3.TabIndex = 91;
@@ -637,7 +634,7 @@
             // valUTxCT2
             // 
             this.valUTxCT2.AutoSize = true;
-            this.valUTxCT2.Location = new System.Drawing.Point(259, 340);
+            this.valUTxCT2.Location = new System.Drawing.Point(192, 266);
             this.valUTxCT2.Name = "valUTxCT2";
             this.valUTxCT2.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT2.TabIndex = 90;
@@ -646,7 +643,7 @@
             // valUTxCT1
             // 
             this.valUTxCT1.AutoSize = true;
-            this.valUTxCT1.Location = new System.Drawing.Point(259, 317);
+            this.valUTxCT1.Location = new System.Drawing.Point(192, 253);
             this.valUTxCT1.Name = "valUTxCT1";
             this.valUTxCT1.Size = new System.Drawing.Size(57, 13);
             this.valUTxCT1.TabIndex = 89;
@@ -655,7 +652,7 @@
             // valDOA4
             // 
             this.valDOA4.AutoSize = true;
-            this.valDOA4.Location = new System.Drawing.Point(345, 386);
+            this.valDOA4.Location = new System.Drawing.Point(256, 294);
             this.valDOA4.Name = "valDOA4";
             this.valDOA4.Size = new System.Drawing.Size(57, 13);
             this.valDOA4.TabIndex = 96;
@@ -664,7 +661,7 @@
             // valDOA3
             // 
             this.valDOA3.AutoSize = true;
-            this.valDOA3.Location = new System.Drawing.Point(345, 365);
+            this.valDOA3.Location = new System.Drawing.Point(256, 281);
             this.valDOA3.Name = "valDOA3";
             this.valDOA3.Size = new System.Drawing.Size(57, 13);
             this.valDOA3.TabIndex = 95;
@@ -673,7 +670,7 @@
             // valDOA2
             // 
             this.valDOA2.AutoSize = true;
-            this.valDOA2.Location = new System.Drawing.Point(345, 343);
+            this.valDOA2.Location = new System.Drawing.Point(255, 268);
             this.valDOA2.Name = "valDOA2";
             this.valDOA2.Size = new System.Drawing.Size(57, 13);
             this.valDOA2.TabIndex = 94;
@@ -682,7 +679,7 @@
             // valDOA1
             // 
             this.valDOA1.AutoSize = true;
-            this.valDOA1.Location = new System.Drawing.Point(345, 320);
+            this.valDOA1.Location = new System.Drawing.Point(255, 255);
             this.valDOA1.Name = "valDOA1";
             this.valDOA1.Size = new System.Drawing.Size(57, 13);
             this.valDOA1.TabIndex = 93;
@@ -691,7 +688,7 @@
             // valCase4
             // 
             this.valCase4.AutoSize = true;
-            this.valCase4.Location = new System.Drawing.Point(432, 387);
+            this.valCase4.Location = new System.Drawing.Point(313, 292);
             this.valCase4.Name = "valCase4";
             this.valCase4.Size = new System.Drawing.Size(57, 13);
             this.valCase4.TabIndex = 100;
@@ -700,7 +697,7 @@
             // valCase3
             // 
             this.valCase3.AutoSize = true;
-            this.valCase3.Location = new System.Drawing.Point(432, 365);
+            this.valCase3.Location = new System.Drawing.Point(313, 279);
             this.valCase3.Name = "valCase3";
             this.valCase3.Size = new System.Drawing.Size(57, 13);
             this.valCase3.TabIndex = 99;
@@ -709,7 +706,7 @@
             // valCase2
             // 
             this.valCase2.AutoSize = true;
-            this.valCase2.Location = new System.Drawing.Point(432, 343);
+            this.valCase2.Location = new System.Drawing.Point(313, 266);
             this.valCase2.Name = "valCase2";
             this.valCase2.Size = new System.Drawing.Size(57, 13);
             this.valCase2.TabIndex = 98;
@@ -718,7 +715,7 @@
             // valCase1
             // 
             this.valCase1.AutoSize = true;
-            this.valCase1.Location = new System.Drawing.Point(432, 320);
+            this.valCase1.Location = new System.Drawing.Point(313, 253);
             this.valCase1.Name = "valCase1";
             this.valCase1.Size = new System.Drawing.Size(57, 13);
             this.valCase1.TabIndex = 97;
@@ -727,7 +724,7 @@
             // valPS4
             // 
             this.valPS4.AutoSize = true;
-            this.valPS4.Location = new System.Drawing.Point(518, 388);
+            this.valPS4.Location = new System.Drawing.Point(374, 294);
             this.valPS4.Name = "valPS4";
             this.valPS4.Size = new System.Drawing.Size(57, 13);
             this.valPS4.TabIndex = 104;
@@ -736,7 +733,7 @@
             // valPS3
             // 
             this.valPS3.AutoSize = true;
-            this.valPS3.Location = new System.Drawing.Point(518, 366);
+            this.valPS3.Location = new System.Drawing.Point(374, 281);
             this.valPS3.Name = "valPS3";
             this.valPS3.Size = new System.Drawing.Size(57, 13);
             this.valPS3.TabIndex = 103;
@@ -745,7 +742,7 @@
             // valPS2
             // 
             this.valPS2.AutoSize = true;
-            this.valPS2.Location = new System.Drawing.Point(518, 344);
+            this.valPS2.Location = new System.Drawing.Point(374, 268);
             this.valPS2.Name = "valPS2";
             this.valPS2.Size = new System.Drawing.Size(57, 13);
             this.valPS2.TabIndex = 102;
@@ -754,7 +751,7 @@
             // valPS1
             // 
             this.valPS1.AutoSize = true;
-            this.valPS1.Location = new System.Drawing.Point(518, 321);
+            this.valPS1.Location = new System.Drawing.Point(374, 255);
             this.valPS1.Name = "valPS1";
             this.valPS1.Size = new System.Drawing.Size(57, 13);
             this.valPS1.TabIndex = 101;
@@ -763,7 +760,7 @@
             // valDistrict4
             // 
             this.valDistrict4.AutoSize = true;
-            this.valDistrict4.Location = new System.Drawing.Point(611, 387);
+            this.valDistrict4.Location = new System.Drawing.Point(434, 292);
             this.valDistrict4.Name = "valDistrict4";
             this.valDistrict4.Size = new System.Drawing.Size(57, 13);
             this.valDistrict4.TabIndex = 108;
@@ -772,7 +769,7 @@
             // valDistrict3
             // 
             this.valDistrict3.AutoSize = true;
-            this.valDistrict3.Location = new System.Drawing.Point(611, 365);
+            this.valDistrict3.Location = new System.Drawing.Point(434, 279);
             this.valDistrict3.Name = "valDistrict3";
             this.valDistrict3.Size = new System.Drawing.Size(57, 13);
             this.valDistrict3.TabIndex = 107;
@@ -781,7 +778,7 @@
             // valDistrict2
             // 
             this.valDistrict2.AutoSize = true;
-            this.valDistrict2.Location = new System.Drawing.Point(611, 343);
+            this.valDistrict2.Location = new System.Drawing.Point(434, 266);
             this.valDistrict2.Name = "valDistrict2";
             this.valDistrict2.Size = new System.Drawing.Size(57, 13);
             this.valDistrict2.TabIndex = 106;
@@ -790,7 +787,7 @@
             // valDistrict1
             // 
             this.valDistrict1.AutoSize = true;
-            this.valDistrict1.Location = new System.Drawing.Point(611, 320);
+            this.valDistrict1.Location = new System.Drawing.Point(434, 253);
             this.valDistrict1.Name = "valDistrict1";
             this.valDistrict1.Size = new System.Drawing.Size(57, 13);
             this.valDistrict1.TabIndex = 105;
@@ -799,7 +796,7 @@
             // valVisitorName4
             // 
             this.valVisitorName4.AutoSize = true;
-            this.valVisitorName4.Location = new System.Drawing.Point(65, 526);
+            this.valVisitorName4.Location = new System.Drawing.Point(61, 376);
             this.valVisitorName4.Name = "valVisitorName4";
             this.valVisitorName4.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName4.TabIndex = 112;
@@ -808,7 +805,7 @@
             // valVisitorName3
             // 
             this.valVisitorName3.AutoSize = true;
-            this.valVisitorName3.Location = new System.Drawing.Point(65, 504);
+            this.valVisitorName3.Location = new System.Drawing.Point(61, 363);
             this.valVisitorName3.Name = "valVisitorName3";
             this.valVisitorName3.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName3.TabIndex = 111;
@@ -817,7 +814,7 @@
             // valVisitorName2
             // 
             this.valVisitorName2.AutoSize = true;
-            this.valVisitorName2.Location = new System.Drawing.Point(65, 482);
+            this.valVisitorName2.Location = new System.Drawing.Point(61, 350);
             this.valVisitorName2.Name = "valVisitorName2";
             this.valVisitorName2.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName2.TabIndex = 110;
@@ -826,7 +823,7 @@
             // valVisitorName1
             // 
             this.valVisitorName1.AutoSize = true;
-            this.valVisitorName1.Location = new System.Drawing.Point(65, 459);
+            this.valVisitorName1.Location = new System.Drawing.Point(61, 337);
             this.valVisitorName1.Name = "valVisitorName1";
             this.valVisitorName1.Size = new System.Drawing.Size(57, 13);
             this.valVisitorName1.TabIndex = 109;
@@ -835,7 +832,7 @@
             // valRelation4
             // 
             this.valRelation4.AutoSize = true;
-            this.valRelation4.Location = new System.Drawing.Point(169, 526);
+            this.valRelation4.Location = new System.Drawing.Point(124, 376);
             this.valRelation4.Name = "valRelation4";
             this.valRelation4.Size = new System.Drawing.Size(57, 13);
             this.valRelation4.TabIndex = 116;
@@ -844,7 +841,7 @@
             // valRelation3
             // 
             this.valRelation3.AutoSize = true;
-            this.valRelation3.Location = new System.Drawing.Point(169, 504);
+            this.valRelation3.Location = new System.Drawing.Point(124, 363);
             this.valRelation3.Name = "valRelation3";
             this.valRelation3.Size = new System.Drawing.Size(57, 13);
             this.valRelation3.TabIndex = 115;
@@ -853,7 +850,7 @@
             // valRelation2
             // 
             this.valRelation2.AutoSize = true;
-            this.valRelation2.Location = new System.Drawing.Point(169, 482);
+            this.valRelation2.Location = new System.Drawing.Point(124, 350);
             this.valRelation2.Name = "valRelation2";
             this.valRelation2.Size = new System.Drawing.Size(57, 13);
             this.valRelation2.TabIndex = 114;
@@ -862,7 +859,7 @@
             // valRelation1
             // 
             this.valRelation1.AutoSize = true;
-            this.valRelation1.Location = new System.Drawing.Point(169, 459);
+            this.valRelation1.Location = new System.Drawing.Point(124, 337);
             this.valRelation1.Name = "valRelation1";
             this.valRelation1.Size = new System.Drawing.Size(57, 13);
             this.valRelation1.TabIndex = 113;
@@ -871,7 +868,7 @@
             // valIDProof4
             // 
             this.valIDProof4.AutoSize = true;
-            this.valIDProof4.Location = new System.Drawing.Point(260, 526);
+            this.valIDProof4.Location = new System.Drawing.Point(188, 376);
             this.valIDProof4.Name = "valIDProof4";
             this.valIDProof4.Size = new System.Drawing.Size(57, 13);
             this.valIDProof4.TabIndex = 120;
@@ -880,7 +877,7 @@
             // valIDProof3
             // 
             this.valIDProof3.AutoSize = true;
-            this.valIDProof3.Location = new System.Drawing.Point(260, 504);
+            this.valIDProof3.Location = new System.Drawing.Point(188, 363);
             this.valIDProof3.Name = "valIDProof3";
             this.valIDProof3.Size = new System.Drawing.Size(57, 13);
             this.valIDProof3.TabIndex = 119;
@@ -889,7 +886,7 @@
             // valIDProof2
             // 
             this.valIDProof2.AutoSize = true;
-            this.valIDProof2.Location = new System.Drawing.Point(260, 482);
+            this.valIDProof2.Location = new System.Drawing.Point(188, 350);
             this.valIDProof2.Name = "valIDProof2";
             this.valIDProof2.Size = new System.Drawing.Size(57, 13);
             this.valIDProof2.TabIndex = 118;
@@ -898,7 +895,7 @@
             // valIDProof1
             // 
             this.valIDProof1.AutoSize = true;
-            this.valIDProof1.Location = new System.Drawing.Point(260, 459);
+            this.valIDProof1.Location = new System.Drawing.Point(188, 337);
             this.valIDProof1.Name = "valIDProof1";
             this.valIDProof1.Size = new System.Drawing.Size(57, 13);
             this.valIDProof1.TabIndex = 117;
@@ -907,7 +904,7 @@
             // valMobile4
             // 
             this.valMobile4.AutoSize = true;
-            this.valMobile4.Location = new System.Drawing.Point(441, 526);
+            this.valMobile4.Location = new System.Drawing.Point(313, 376);
             this.valMobile4.Name = "valMobile4";
             this.valMobile4.Size = new System.Drawing.Size(57, 13);
             this.valMobile4.TabIndex = 124;
@@ -916,7 +913,7 @@
             // valMobile3
             // 
             this.valMobile3.AutoSize = true;
-            this.valMobile3.Location = new System.Drawing.Point(441, 504);
+            this.valMobile3.Location = new System.Drawing.Point(313, 363);
             this.valMobile3.Name = "valMobile3";
             this.valMobile3.Size = new System.Drawing.Size(57, 13);
             this.valMobile3.TabIndex = 123;
@@ -925,7 +922,7 @@
             // valMobile2
             // 
             this.valMobile2.AutoSize = true;
-            this.valMobile2.Location = new System.Drawing.Point(441, 482);
+            this.valMobile2.Location = new System.Drawing.Point(313, 350);
             this.valMobile2.Name = "valMobile2";
             this.valMobile2.Size = new System.Drawing.Size(57, 13);
             this.valMobile2.TabIndex = 122;
@@ -934,7 +931,7 @@
             // valMobile1
             // 
             this.valMobile1.AutoSize = true;
-            this.valMobile1.Location = new System.Drawing.Point(441, 459);
+            this.valMobile1.Location = new System.Drawing.Point(313, 337);
             this.valMobile1.Name = "valMobile1";
             this.valMobile1.Size = new System.Drawing.Size(57, 13);
             this.valMobile1.TabIndex = 121;
@@ -943,7 +940,7 @@
             // valAddress4
             // 
             this.valAddress4.AutoSize = true;
-            this.valAddress4.Location = new System.Drawing.Point(533, 526);
+            this.valAddress4.Location = new System.Drawing.Point(374, 376);
             this.valAddress4.Name = "valAddress4";
             this.valAddress4.Size = new System.Drawing.Size(57, 13);
             this.valAddress4.TabIndex = 128;
@@ -952,7 +949,7 @@
             // valAddress3
             // 
             this.valAddress3.AutoSize = true;
-            this.valAddress3.Location = new System.Drawing.Point(533, 504);
+            this.valAddress3.Location = new System.Drawing.Point(374, 363);
             this.valAddress3.Name = "valAddress3";
             this.valAddress3.Size = new System.Drawing.Size(57, 13);
             this.valAddress3.TabIndex = 127;
@@ -961,7 +958,7 @@
             // valAddress2
             // 
             this.valAddress2.AutoSize = true;
-            this.valAddress2.Location = new System.Drawing.Point(533, 482);
+            this.valAddress2.Location = new System.Drawing.Point(374, 350);
             this.valAddress2.Name = "valAddress2";
             this.valAddress2.Size = new System.Drawing.Size(57, 13);
             this.valAddress2.TabIndex = 126;
@@ -970,7 +967,7 @@
             // valAddress1
             // 
             this.valAddress1.AutoSize = true;
-            this.valAddress1.Location = new System.Drawing.Point(533, 459);
+            this.valAddress1.Location = new System.Drawing.Point(374, 337);
             this.valAddress1.Name = "valAddress1";
             this.valAddress1.Size = new System.Drawing.Size(57, 13);
             this.valAddress1.TabIndex = 125;
@@ -979,7 +976,7 @@
             // valPurpose
             // 
             this.valPurpose.AutoSize = true;
-            this.valPurpose.Location = new System.Drawing.Point(172, 568);
+            this.valPurpose.Location = new System.Drawing.Point(155, 405);
             this.valPurpose.Name = "valPurpose";
             this.valPurpose.Size = new System.Drawing.Size(57, 13);
             this.valPurpose.TabIndex = 129;
@@ -988,7 +985,7 @@
             // valArticles
             // 
             this.valArticles.AutoSize = true;
-            this.valArticles.Location = new System.Drawing.Point(432, 572);
+            this.valArticles.Location = new System.Drawing.Point(297, 407);
             this.valArticles.Name = "valArticles";
             this.valArticles.Size = new System.Drawing.Size(57, 13);
             this.valArticles.TabIndex = 130;
@@ -997,7 +994,7 @@
             // valMoney
             // 
             this.valMoney.AutoSize = true;
-            this.valMoney.Location = new System.Drawing.Point(705, 572);
+            this.valMoney.Location = new System.Drawing.Point(433, 409);
             this.valMoney.Name = "valMoney";
             this.valMoney.Size = new System.Drawing.Size(57, 13);
             this.valMoney.TabIndex = 131;
@@ -1006,7 +1003,7 @@
             // valAadhaar4
             // 
             this.valAadhaar4.AutoSize = true;
-            this.valAadhaar4.Location = new System.Drawing.Point(346, 526);
+            this.valAadhaar4.Location = new System.Drawing.Point(247, 376);
             this.valAadhaar4.Name = "valAadhaar4";
             this.valAadhaar4.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar4.TabIndex = 136;
@@ -1015,7 +1012,7 @@
             // valAadhaar3
             // 
             this.valAadhaar3.AutoSize = true;
-            this.valAadhaar3.Location = new System.Drawing.Point(346, 504);
+            this.valAadhaar3.Location = new System.Drawing.Point(246, 363);
             this.valAadhaar3.Name = "valAadhaar3";
             this.valAadhaar3.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar3.TabIndex = 135;
@@ -1024,7 +1021,7 @@
             // valAadhaar2
             // 
             this.valAadhaar2.AutoSize = true;
-            this.valAadhaar2.Location = new System.Drawing.Point(346, 482);
+            this.valAadhaar2.Location = new System.Drawing.Point(247, 350);
             this.valAadhaar2.Name = "valAadhaar2";
             this.valAadhaar2.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar2.TabIndex = 134;
@@ -1033,7 +1030,7 @@
             // valAadhaar1
             // 
             this.valAadhaar1.AutoSize = true;
-            this.valAadhaar1.Location = new System.Drawing.Point(346, 459);
+            this.valAadhaar1.Location = new System.Drawing.Point(246, 337);
             this.valAadhaar1.Name = "valAadhaar1";
             this.valAadhaar1.Size = new System.Drawing.Size(57, 13);
             this.valAadhaar1.TabIndex = 133;
@@ -1042,30 +1039,31 @@
             // lblAadhaar
             // 
             this.lblAadhaar.AutoSize = true;
-            this.lblAadhaar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAadhaar.Location = new System.Drawing.Point(344, 435);
+            this.lblAadhaar.Font = new System.Drawing.Font("Arial Unicode MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAadhaar.Location = new System.Drawing.Point(246, 322);
             this.lblAadhaar.Name = "lblAadhaar";
-            this.lblAadhaar.Size = new System.Drawing.Size(76, 20);
+            this.lblAadhaar.Size = new System.Drawing.Size(67, 15);
             this.lblAadhaar.TabIndex = 132;
             this.lblAadhaar.Text = "आईडी विवरण";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lblLineRight);
+            this.panel1.Controls.Add(this.lblLineLeft);
             this.panel1.Controls.Add(this.valMTime);
             this.panel1.Controls.Add(this.valTime);
             this.panel1.Controls.Add(this.valDate);
             this.panel1.Controls.Add(this.valSNo);
-            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.lblMTime);
             this.panel1.Controls.Add(this.lblTime);
             this.panel1.Controls.Add(this.lblDate);
             this.panel1.Controls.Add(this.lblSNo);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblTitle2);
+            this.panel1.Controls.Add(this.lblSubTitle2);
+            this.panel1.Controls.Add(this.mpassLogo);
+            this.panel1.Controls.Add(this.lblSubTitle1);
+            this.panel1.Controls.Add(this.lblTitle1);
             this.panel1.Controls.Add(this.valAadhaar4);
             this.panel1.Controls.Add(this.valAadhaar3);
             this.panel1.Controls.Add(this.valAadhaar2);
@@ -1122,18 +1120,18 @@
             this.panel1.Controls.Add(this.valPrisonerName3);
             this.panel1.Controls.Add(this.valPrisonerName2);
             this.panel1.Controls.Add(this.valPrisonerName1);
-            this.panel1.Controls.Add(this.label36);
-            this.panel1.Controls.Add(this.label35);
-            this.panel1.Controls.Add(this.label34);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label32);
-            this.panel1.Controls.Add(this.label31);
-            this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.lblSplPermission);
+            this.panel1.Controls.Add(this.lblCount);
+            this.panel1.Controls.Add(this.lblInstruction);
+            this.panel1.Controls.Add(this.lblSuperintendentE);
+            this.panel1.Controls.Add(this.lblDptySuperintendentE);
+            this.panel1.Controls.Add(this.lblJailorE);
+            this.panel1.Controls.Add(this.lblDptyJailorE);
+            this.panel1.Controls.Add(this.lblSuperintendentH);
+            this.panel1.Controls.Add(this.lblDptySuperintendentH);
+            this.panel1.Controls.Add(this.lblJailorH);
+            this.panel1.Controls.Add(this.lblDptyJailorH);
+            this.panel1.Controls.Add(this.lblPermission);
             this.panel1.Controls.Add(this.lblMoney);
             this.panel1.Controls.Add(this.lblArticles);
             this.panel1.Controls.Add(this.lblPurpose);
@@ -1150,22 +1148,41 @@
             this.panel1.Controls.Add(this.lblFatherName);
             this.panel1.Controls.Add(this.lblPrisonerName);
             this.panel1.Controls.Add(this.valPassPic);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 747);
+            this.panel1.Size = new System.Drawing.Size(593, 583);
             this.panel1.TabIndex = 138;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblLineRight
+            // 
+            this.lblLineRight.AutoSize = true;
+            this.lblLineRight.Location = new System.Drawing.Point(346, 82);
+            this.lblLineRight.Name = "lblLineRight";
+            this.lblLineRight.Size = new System.Drawing.Size(190, 13);
+            this.lblLineRight.TabIndex = 140;
+            this.lblLineRight.Text = "-------------------------------------------------------------";
+            // 
+            // lblLineLeft
+            // 
+            this.lblLineLeft.AutoSize = true;
+            this.lblLineLeft.Location = new System.Drawing.Point(30, 82);
+            this.lblLineLeft.Name = "lblLineLeft";
+            this.lblLineLeft.Size = new System.Drawing.Size(190, 13);
+            this.lblLineLeft.TabIndex = 139;
+            this.lblLineLeft.Text = "-------------------------------------------------------------";
             // 
             // MulakatPrintScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 749);
+            this.ClientSize = new System.Drawing.Size(765, 581);
             this.Controls.Add(this.panel1);
             this.Name = "MulakatPrintScreen";
             this.Text = "MulakatPrintScreen";
             this.Load += new System.EventHandler(this.MulakatPrintScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.valPassPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mpassLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -1174,18 +1191,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lblSplPermission;
+        private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Label lblInstruction;
+        private System.Windows.Forms.Label lblSuperintendentE;
+        private System.Windows.Forms.Label lblDptySuperintendentE;
+        private System.Windows.Forms.Label lblJailorE;
+        private System.Windows.Forms.Label lblDptyJailorE;
+        private System.Windows.Forms.Label lblSuperintendentH;
+        private System.Windows.Forms.Label lblDptySuperintendentH;
+        private System.Windows.Forms.Label lblJailorH;
+        private System.Windows.Forms.Label lblDptyJailorH;
+        private System.Windows.Forms.Label lblPermission;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Label lblArticles;
         private System.Windows.Forms.Label lblPurpose;
@@ -1202,16 +1219,15 @@
         private System.Windows.Forms.Label lblFatherName;
         private System.Windows.Forms.Label lblPrisonerName;
         private System.Windows.Forms.PictureBox valPassPic;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblMTime;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblSNo;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitle2;
+        private System.Windows.Forms.Label lblSubTitle2;
+        private System.Windows.Forms.PictureBox mpassLogo;
+        private System.Windows.Forms.Label lblSubTitle1;
+        private System.Windows.Forms.Label lblTitle1;
         private System.Windows.Forms.Label valSNo;
         private System.Windows.Forms.Label valDate;
         private System.Windows.Forms.Label valTime;
@@ -1273,5 +1289,7 @@
         private System.Windows.Forms.Label valAadhaar1;
         private System.Windows.Forms.Label lblAadhaar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblLineRight;
+        private System.Windows.Forms.Label lblLineLeft;
     }
 }

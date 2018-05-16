@@ -9,3 +9,15 @@ E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatEntities.cspro
 E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatEntities.csproj.CoreCompileInputs.cache
 E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.dll
 E:\VB-Scripting\MPass_v0.2\MulakatDataRepository\obj\Debug\MulakatDataRepository.pdb
+D:\MPass_v0.2\MulakateEntitiesRepo\bin\Debug\MulakatDataRepository.dll
+D:\MPass_v0.2\MulakateEntitiesRepo\bin\Debug\MulakatDataRepository.pdb
+D:\MPass_v0.2\MulakateEntitiesRepo\obj\Debug\MulakatEntities.csprojResolveAssemblyReference.cache
+D:\MPass_v0.2\MulakateEntitiesRepo\obj\Debug\MulakatEntities.csproj.CoreCompileInputs.cache
+D:\MPass_v0.2\MulakateEntitiesRepo\obj\Debug\MulakatDataRepository.dll
+D:\MPass_v0.2\MulakateEntitiesRepo\obj\Debug\MulakatDataRepository.pdb
+E:\VB-Scripting\MPass_v0.4\MulakateEntitiesRepo\bin\Debug\MulakatDataRepository.dll
+E:\VB-Scripting\MPass_v0.4\MulakateEntitiesRepo\bin\Debug\MulakatDataRepository.pdb
+E:\VB-Scripting\MPass_v0.4\MulakateEntitiesRepo\obj\Debug\MulakatEntities.csprojResolveAssemblyReference.cache
+E:\VB-Scripting\MPass_v0.4\MulakateEntitiesRepo\obj\Debug\MulakatEntities.csproj.CoreCompileInputs.cache
+E:\VB-Scripting\MPass_v0.4\MulakateEntitiesRepo\obj\Debug\MulakatDataRepository.dll
+E:\VB-Scripting\MPass_v0.4\MulakateEntitiesRepo\obj\Debug\MulakatDataRepository.pdb

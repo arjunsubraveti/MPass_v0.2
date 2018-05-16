@@ -26,22 +26,22 @@ namespace MulakatPassUK.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\\VB-Scripting\\MPass_v0.2\\MulakatDa" +
-            "taRepo\\GP.mdb;User ID=admin;Jet OLEDB:Database Password=rjw3ak")]
-        public string GPConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\GP.mdb;Jet OLEDB:Dat" +
+            "abase Password=rjw3ak")]
+        public string MPConnectionString {
             get {
-                return ((string)(this["GPConnectionString"]));
+                return ((string)(this["MPConnectionString"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\GP.mdb;Jet OLEDB:Dat" +
-            "abase Password=rjw3ak")]
-        public string MPConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0}\\GP.mdb;User ID=admin;Jet OLEDB:D" +
+            "atabase Password=rjw3ak")]
+        public string GPConnectionString {
             get {
-                return ((string)(this["MPConnectionString"]));
+                return ((string)(this["GPConnectionString"]));
             }
         }
     }

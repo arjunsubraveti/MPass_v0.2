@@ -12,8 +12,8 @@ namespace MulakatPassUK
 {
     public class GpassFormHandler   
     {
-        private string regExForName = @"^[a-zA-Z][a-zA-Z]+";
-        private string regExForMobile = @"^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1}){0,1}98(\s){0,1}(\-){0,1}(\s){0,1}[1-9]{1}[0-9]{7}$";
+        private string regExForName = @"^[a-zA-Z\s]+$";
+        private string regExForMobile = @"^[0-9]+$";
         private ErrorProvider errorProvider;
         public string errorMessage = "";
 
@@ -119,7 +119,8 @@ namespace MulakatPassUK
 
 
         public void ValidateAllComboBoxes(Control parents)
-        {  
+        {
+            int wrongComboBoxCount = 0;
             foreach (Control c in parents.Controls)
             {              
                 if ((c.GetType() == typeof(ComboBox)))
@@ -127,12 +128,15 @@ namespace MulakatPassUK
                     if(!string.IsNullOrWhiteSpace(c.Text))
                     {
                         ((ComboBox)(c)).BackColor = Color.Pink;
+                        wrongComboBoxCount += 1;
 
                         foreach (var item in ((ComboBox)(c)).Items)
                         {
                             if (item.ToString() == c.Text)
                             {
                                 ((ComboBox)(c)).BackColor = Color.White;
+                                wrongComboBoxCount = 0;
+                                
                             }
                         }
 
@@ -142,12 +146,16 @@ namespace MulakatPassUK
                     else
                     {
                         ((ComboBox)(c)).BackColor = Color.White;
-                    }
+
+                    }                    
 
                 }
                
-                }
             }
+
+            if (wrongComboBoxCount > 0)
+                errorMessage += "Please fill the boxes highlighted in Red\n";
+        }
 
 
     

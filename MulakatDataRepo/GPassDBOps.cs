@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using MulakatEntities;
 using System.Management;
 using System.Windows.Forms;
-using System.Net.NetworkInformation;
+using System.Net.NetworkInformation;    
 
 namespace MulakatDataOps
 {
@@ -50,64 +50,64 @@ namespace MulakatDataOps
                     "P_Name1, P_FName1, P_Type1, DOA1, CaseDet1, PS1, Dist1, " +
                     "P_Name2, P_FName2, P_Type2, DOA2, CaseDet2, PS2, Dist2, " +
                     "P_Name3, P_FName3, P_Type3, DOA3, CaseDet3, PS3, Dist3, Vis_Img ) VALUES (" +
-                    "'"  +      gpassEntity.SystemUId           + "'," +
-                    " '" +      gpassEntity.OnlyDate            + "', " +
-                    "'"  +      gpassEntity.OnlyTime            + "', " +
-                    "'"  +      gpassEntity.Money               + "', " +
-                    "'"  +      gpassEntity.Purpose             + "', " +
-                    "'"  +      gpassEntity.Articles            + "', " +
+                    "'"  +      gpassEntity.SystemUId         + "'," +
+                    " '" +      gpassEntity.OnlyDate          + "', " +
+                    "'"  +      gpassEntity.OnlyTime          + "', " +
+                    "'"  +      gpassEntity.Money             + "', " +
+                    "'"  +      gpassEntity.Purpose           + "', " +
+                    "'"  +      gpassEntity.Articles          + "', " +
                     "'"  +      gpassEntity.VisitorName1      + "', " +
-                    "'"  +      gpassEntity.VisitorName2      + "', " +
-                    "'"  +      gpassEntity.VisitorName3      + "', " +
-                    "'"  +      gpassEntity.VisitorName4      + "', " +
                     "'"  +      gpassEntity.Relation1         + "', " +
-                    "'"  +      gpassEntity.Relation2         + "', " +
-                    "'"  +      gpassEntity.Relation3         + "', " +
-                    "'"  +      gpassEntity.Relation4         + "', " +
                     "'"  +      gpassEntity.IdProof1          + "', " +
-                    "'"  +      gpassEntity.IdProof2          + "', " +
-                    "'"  +      gpassEntity.IdProof3          + "', " +
-                    "'"  +      gpassEntity.IdProof4          + "', " +
                     "'"  +      gpassEntity.Aadhaar1          + "', " +
-                    "'"  +      gpassEntity.Aadhaar2          + "', " +
-                    "'"  +      gpassEntity.Aadhaar3          + "', " +
-                    "'"  +      gpassEntity.Aadhaar4          + "', " +
                     "'"  +      gpassEntity.Mobile1           + "', " +
-                    "'"  +      gpassEntity.Mobile2           + "', " +
-                    "'"  +      gpassEntity.Mobile3           + "', " +
-                    "'"  +      gpassEntity.Mobile4           + "', " +
                     "'"  +      gpassEntity.Address1          + "', " +
+                    "'"  +      gpassEntity.VisitorName2      + "', " +
+                    "'"  +      gpassEntity.Relation2         + "', " +
+                    "'"  +      gpassEntity.IdProof2          + "', " +
+                    "'"  +      gpassEntity.Aadhaar2          + "', " +
+                    "'"  +      gpassEntity.Mobile2           + "', " +
                     "'"  +      gpassEntity.Address2          + "', " +
+                    "'"  +      gpassEntity.VisitorName3      + "', " +
+                    "'"  +      gpassEntity.Relation3         + "', " +
+                    "'"  +      gpassEntity.IdProof3          + "', " +
+                    "'"  +      gpassEntity.Aadhaar3          + "', " +
+                    "'"  +      gpassEntity.Mobile3           + "', " +
                     "'"  +      gpassEntity.Address3          + "', " +
-                    "'"  +      gpassEntity.Address4          + "', " +
+                    "'"  +      gpassEntity.VisitorName4      + "', " +
+                    "'"  +      gpassEntity.Relation4         + "', " +
+                    "'"  +      gpassEntity.IdProof4          + "', " +
+                    "'"  +      gpassEntity.Aadhaar4          + "', " +
+                    "'"  +      gpassEntity.Mobile4           + "', " +
+                    "'"  +      gpassEntity.Address4          + "', " +         
                     "'"  +      gpassEntity.PrisonerName1     + "', " +
-                    "'"  +      gpassEntity.PrisonerName2     + "', " +
-                    "'"  +      gpassEntity.PrisonerName3     + "', " +
-                    "'"  +      gpassEntity.PrisonerName4     + "', " +
                     "'"  +      gpassEntity.FatherName1       + "', " +
-                    "'"  +      gpassEntity.FatherName2       + "', " +
-                    "'"  +      gpassEntity.FatherName3       + "', " +
-                    "'"  +      gpassEntity.FatherName4       + "', " +
                     "'"  +      gpassEntity.UTxCT1            + "', " +
-                    "'"  +      gpassEntity.UTxCT2            + "', " +
-                    "'"  +      gpassEntity.UTxCT3            + "', " +
-                    "'"  +      gpassEntity.UTxCT4            + "', " +
                     "'"  +      gpassEntity.DOA1              + "', " +
-                    "'"  +      gpassEntity.DOA2              + "', " +
-                    "'"  +      gpassEntity.DOA3              + "', " +
-                    "'"  +      gpassEntity.DOA4              + "', " +
                     "'"  +      gpassEntity.Case1             + "', " +
-                    "'"  +      gpassEntity.Case2             + "', " +
-                    "'"  +      gpassEntity.Case3             + "', " +
-                    "'"  +      gpassEntity.Case4             + "', " +
                     "'"  +      gpassEntity.PS1               + "', " +
-                    "'"  +      gpassEntity.PS2               + "', " +
-                    "'"  +      gpassEntity.PS3               + "', " +
-                    "'"  +      gpassEntity.PS4               + "', " +
                     "'"  +      gpassEntity.District1         + "', " +
+                    "'"  +      gpassEntity.PrisonerName2     + "', " +
+                    "'"  +      gpassEntity.FatherName2       + "', " +
+                    "'"  +      gpassEntity.UTxCT2            + "', " +
+                    "'"  +      gpassEntity.DOA2              + "', " +
+                    "'"  +      gpassEntity.Case2             + "', " +
+                    "'"  +      gpassEntity.PS2               + "', " +
                     "'"  +      gpassEntity.District2         + "', " +
+                    "'"  +      gpassEntity.PrisonerName3     + "', " +
+                    "'"  +      gpassEntity.FatherName3       + "', " +
+                    "'"  +      gpassEntity.UTxCT3            + "', " +
+                    "'"  +      gpassEntity.DOA3              + "', " +
+                    "'"  +      gpassEntity.Case3             + "', " +
+                    "'"  +      gpassEntity.PS3               + "', " +
                     "'"  +      gpassEntity.District3         + "', " +
-                    "'"  +      gpassEntity.District4         + "', " +
+                    "'"  +      gpassEntity.PrisonerName4     + "', " +
+                    "'"  +      gpassEntity.FatherName4       + "', " +
+                    "'"  +      gpassEntity.UTxCT4            + "', " +
+                    "'"  +      gpassEntity.DOA4              + "', " +
+                    "'"  +      gpassEntity.Case4             + "', " +
+                    "'"  +      gpassEntity.PS4               + "', " +
+                    "'"  +      gpassEntity.District4         + "', " +                 
                     "'"  +      gpassEntity.PassImageData     + "') " ;
                 cmd.Connection = conn;
                 return cmd.ExecuteNonQuery();
